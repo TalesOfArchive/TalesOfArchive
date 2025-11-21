@@ -1,0 +1,1718 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tales of Xillia &mdash; Characters &mdash; Leia Rolando</title>
+
+  <style>
+    :root {
+      --ink: #0f172a;
+      --bg: #0b1020;
+      --ring: rgba(109, 40, 217, 0.35);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: var(--ink);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--bg);
+      color: #e2e8f0;
+    }
+
+    .nav {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 800;
+    }
+
+    .logo-img {
+      height: 24px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .crumbs {
+      padding-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .crumbs a {
+      color: #cbd5e1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .back {
+      display: inline-block;
+      padding: 0.5rem 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: transparent;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2rem 0;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .thumb {
+      width: 280px;
+      height: 360px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #2a3650;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb img {
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0.2rem 0 0.6rem;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    /* Mechanics */
+    .mechanics-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .mechanic {
+      background: #eef2ff;
+      padding: 0.5rem 0.6rem;
+      border-radius: 10px;
+    }
+
+    .mechanic-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .mechanic-tag {
+      background: #ffffff;
+      border: 1px solid #c4b5fd;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #4f46e5;
+    }
+
+    .mechanic-name {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .mechanic-desc {
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 0.6rem;
+      margin: 1.3rem 0;
+    }
+
+    .tab {
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .tab.active {
+      background: #6d28d9;
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .panel {
+      display: none;
+      padding-top: 0.5rem;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    /* Search + table */
+    input[type="search"] {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      font: inherit;
+    }
+
+    input[type="search"]:focus {
+      border-color: #6d28d9;
+      box-shadow: 0 0 0 3px var(--ring);
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 6px;
+    }
+
+    thead th {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.85rem;
+      text-align: left;
+      color: #475569;
+    }
+
+    tbody td {
+      background: #ffffff;
+      padding: 0.6rem 0.6rem;
+      border: 1px solid #e2e8f0;
+      border-left: none;
+      border-right: none;
+      font-size: 0.9rem;
+    }
+
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
+    footer {
+      background: #0b1020;
+      color: #cbd5e1;
+      padding: 1.2rem 0;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  </style>
+
+  <!-- Favicon (3 levels up from /game/characters/char/index.html) -->
+  <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
+      <span class="logo-text">Tales Archive</span>
+    </div>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Xillia</a>
+  </div>
+
+  <div class="container crumbs">
+    <a href="../../index.html">Tales of Xillia</a> &bull; Leia Rolando
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="thumb">
+      <img src="../../../images/xillia/Leia-status.jpg" alt="Leia Rolando status art">
+    </div>
+
+    <div>
+      <h1>Leia Rolando</h1>
+
+      <div class="mechanics-list">
+        <div class="mechanic">
+          <div class="mechanic-header">
+            <span class="mechanic-tag">Special Ability</span>
+            <span class="mechanic-name">Elongating Staff
+</span>
+          </div>
+          <div class="mechanic-desc">
+            After a perfect backstep, Leia's staff will extend which boosts her attack range.
+          </div>
+        </div>
+
+        <div class="mechanic">
+          <div class="mechanic-header">
+            <span class="mechanic-tag">Partner Skill</span>
+            <span class="mechanic-name">Item Steal</span>
+          </div>
+          <div class="mechanic-desc">
+            When an enemy is knocked down and on the ground, she has a chance to steal an item from the enemy.
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="artes">Artes</button>
+        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="weapons">Weapons</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artes -->
+  <section id="panel-artes" class="panel active">
+    <input type="search" id="search-artes" placeholder="Search artes...">
+
+ 
+<tbody>
+      <!-- Leia Rolando Artes -->
+ <table id="tbl-artes">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Element</th>
+      <th>Arte Type</th>
+      <th>Scaling</th>
+      <th>Cost</th>
+      <th>Usage Upgrades</th>
+      <th>Learned</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Martial Artes -->
+    <tr class="section-row">
+      <td colspan="8">Martial Artes (武身技 - Bushinwaza)</td>
+    </tr>
+
+    <tr>
+      <td>Darting Claw (Shunjinsou / 瞬迅爪)</td>
+      <td>Wind</td>
+      <td>Martial Arte</td>
+      <td>AGL</td>
+      <td>9 TP</td>
+      <td>Aerial-enabled after 100 uses.</td>
+      <td>Lilium Orb: Orb 1 Node 1</td>
+      <td>Aerial; Chance to inflict Paralysis.</td>
+    </tr>
+
+    <tr>
+      <td>Spiral Strike (Shousougeki / 昇掃撃)</td>
+      <td>None</td>
+      <td>Martial Arte</td>
+      <td>None</td>
+      <td>10 TP</td>
+      <td>Leia becomes airborne after executing this arte.</td>
+      <td>Lilium Orb: Orb 1 Node 5</td>
+      <td>Aerial.</td>
+    </tr>
+
+    <tr>
+      <td>Cerberus Strike (Sazanka / 三散華)</td>
+      <td>Earth</td>
+      <td>Martial Arte</td>
+      <td>AGL</td>
+      <td>9 TP</td>
+      <td>Attack speed increases after 200 uses; knockdown enabled on final hit in midair.</td>
+      <td>Lilium Orb: Orb 1 Node 2</td>
+      <td>Aerial; Knockdown; Chance to inflict Slow.</td>
+    </tr>
+
+    <tr>
+      <td>Swallow Flight (Hienshousen / 飛燕翔旋)</td>
+      <td>Fire</td>
+      <td>Martial Arte</td>
+      <td>None</td>
+      <td>12 TP</td>
+      <td>Chance to inflict Burn increases after 200 uses; forces downed enemies to stand after 400 uses.</td>
+      <td>Lilium Orb: Orb 2 Node 1</td>
+      <td>Aerial; Stand Up; Chance to inflict Burn.</td>
+    </tr>
+
+    <tr>
+      <td>Rabid Lunge (Tojinshou / 兎迅衝)</td>
+      <td>Earth</td>
+      <td>Martial Arte</td>
+      <td>None</td>
+      <td>11 TP</td>
+      <td>Guard Break chance after 100 uses; Leia cannot be staggered during the arte after 100 uses; attack speed increases after 200 uses.</td>
+      <td>Lilium Orb: Orb 1 Node 8</td>
+      <td>Aerial; Knockdown; Guard Break; Chance to inflict Slow.</td>
+    </tr>
+
+    <tr>
+      <td>Crescent Flash (Tairingekka / 大輪月華)</td>
+      <td>Water</td>
+      <td>Martial Arte</td>
+      <td>None</td>
+      <td>14 TP</td>
+      <td>Range increases after 200 uses.</td>
+      <td>Lilium Orb: Orb 2 Node 4</td>
+      <td>Weak; Forces enemies to turn and pushes them away.</td>
+    </tr>
+
+    <tr>
+      <td>Staff Rain (Chirisazame / 散沙雨)</td>
+      <td>None</td>
+      <td>Martial Arte</td>
+      <td>DEX</td>
+      <td>16 TP</td>
+      <td>Hold the Artes button to perform extra hits; ground and aerial hit count increase with usage.</td>
+      <td>Lilium Orb: Orb 2 Node 3</td>
+      <td>Aerial.</td>
+    </tr>
+
+    <tr>
+      <td>Soaring Vortex (Kankuusen / 巻空旋)</td>
+      <td>Wind</td>
+      <td>Martial Arte</td>
+      <td>None</td>
+      <td>12 TP</td>
+      <td>Area of effect increases after 200 uses.</td>
+      <td>Lilium Orb: Orb 1 Node 4</td>
+      <td>Knockdown; Chance to inflict Paralysis; Only activates if a non-downed enemy is in range.</td>
+    </tr>
+
+    <tr>
+      <td>Soaring Blast (Shoubu Koubappa / 翔舞煌爆破)</td>
+      <td>None</td>
+      <td>Martial Arte</td>
+      <td>VIT</td>
+      <td>18 TP</td>
+      <td>Area of effect increases with altitude; knocks enemies higher after 200 uses.</td>
+      <td>Lilium Orb: Orb 2 Node 5</td>
+      <td>Aerial; Knockdown.</td>
+    </tr>
+
+    <!-- Spirit Artes: Novice -->
+    <tr class="section-row">
+      <td colspan="8">Spirit Artes – Novice (下級術 - Kakyuujutsu)</td>
+    </tr>
+
+    <tr>
+      <td>First Aid (ファーストエイド)</td>
+      <td>None</td>
+      <td>Novice Spirit Arte</td>
+      <td>None</td>
+      <td>8 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 1 Node 1</td>
+      <td>Heals 30% of max HP to one ally.</td>
+    </tr>
+
+    <tr>
+      <td>Sharpness (シャープネス)</td>
+      <td>None</td>
+      <td>Novice Spirit Arte</td>
+      <td>None</td>
+      <td>8 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 1 Node 3</td>
+      <td>Raises physical and magical attack by 40% for one ally.</td>
+    </tr>
+
+    <tr>
+      <td>Barrier (バリアー)</td>
+      <td>None</td>
+      <td>Novice Spirit Arte</td>
+      <td>None</td>
+      <td>8 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 1 Node 6</td>
+      <td>Raises physical and magical defense by 50% for one ally.</td>
+    </tr>
+
+    <!-- Spirit Artes: Intermediate -->
+    <tr class="section-row">
+      <td colspan="8">Spirit Artes – Intermediate (中級術 - Chuukyuujutsu)</td>
+    </tr>
+
+    <tr>
+      <td>Heal (ヒール)</td>
+      <td>None</td>
+      <td>Intermediate Spirit Arte</td>
+      <td>None</td>
+      <td>14 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 2 Node 1</td>
+      <td>Heals 50% of max HP to one ally.</td>
+    </tr>
+
+    <tr>
+      <td>Resurrection (Raise Dead / レイズデッド)</td>
+      <td>None</td>
+      <td>Intermediate Spirit Arte</td>
+      <td>None</td>
+      <td>26 TP</td>
+      <td>None.</td>
+      <td>-</td>
+      <td>Heals or revives one ally with 50% of max HP.</td>
+    </tr>
+
+    <tr>
+      <td>Quickness (クイックネス)</td>
+      <td>None</td>
+      <td>Intermediate Spirit Arte</td>
+      <td>None</td>
+      <td>9 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 2 Node 5</td>
+      <td>Increases movement speed by 20% for one ally.</td>
+    </tr>
+
+    <tr>
+      <td>Elemental Impulse (Fancy Elements / ファンシーエレメンツ)</td>
+      <td>Varies</td>
+      <td>Intermediate Spirit Arte</td>
+      <td>None</td>
+      <td>10 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 1 Node 6</td>
+      <td>Applies the target’s weakness element to one ally’s weapon.</td>
+    </tr>
+
+    <!-- Spirit Artes: Advanced -->
+    <tr class="section-row">
+      <td colspan="8">Spirit Artes – Advanced (上級術 - Joukyuujutsu)</td>
+    </tr>
+
+    <tr>
+      <td>Cure (キュア)</td>
+      <td>None</td>
+      <td>Advanced Spirit Arte</td>
+      <td>None</td>
+      <td>21 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 2 Node 5</td>
+      <td>Heals 70% of max HP to one ally.</td>
+    </tr>
+
+    <!-- Linked Artes -->
+    <tr class="section-row">
+      <td colspan="8">Linked Artes (共鳴術技リンクアーツ - Kyoumei Jutsuwaza)</td>
+    </tr>
+
+    <tr>
+      <td>Tempest Pirouette (Houbu Kasshingeki / 封舞活震劇)</td>
+      <td>Wind</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Jude. Staff Rain + Whirlwind Snap.</td>
+      <td>Chance to inflict Paralysis.</td>
+    </tr>
+
+    <tr>
+      <td>Sharpening Pulse (Vital Enforce / ヴァイトルインフォース)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>Inflicts knockdown after 100 uses; gains debuff effect after 200 uses.</td>
+      <td>Leia + Jude. Sharpness + Steel.</td>
+      <td>Increases allies’ physical and magical attack; later inflicts debuffs and knockdown.</td>
+    </tr>
+
+    <tr>
+      <td>Pixie Heal (Aid All / エイドオール)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Jude. First Aid + Healer.</td>
+      <td>Heals 40% of max HP to all allies.</td>
+    </tr>
+
+    <tr>
+      <td>Tempest Clash (Kankuukyoubu / 巻空鏡舞)</td>
+      <td>Wind</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Jude. Soaring Vortex + Soaring Vortex.</td>
+      <td>Knockdown; Chance to inflict Paralysis.</td>
+    </tr>
+
+    <tr>
+      <td>Scylla Strike (Muzanka / 六散華)</td>
+      <td>Earth</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Jude. Cerberus Strike + Cerberus Strike.</td>
+      <td>Stand Up; Chance to inflict Slow.</td>
+    </tr>
+
+    <tr>
+      <td>Destructive Blaze (Senpa Houyokudan / 閃破封翼弾)</td>
+      <td>Fire</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Jude. Swallow Flight + Phoenix Plunge.</td>
+      <td>Chance to inflict Burn.</td>
+    </tr>
+
+    <tr>
+      <td>Tetra Elements (Element 4 / エレメント４)</td>
+      <td>Fire / Water / Wind / Earth</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Milla. Elemental Impulse + Whirling Assault.</td>
+      <td>Inflicts Burn, Weak, Paralysis, and Slow.</td>
+    </tr>
+
+    <tr>
+      <td>Aerial Fire (エアリアルファイア)</td>
+      <td>Fire</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Milla. Soaring Vortex + Fireball.</td>
+      <td>Knockdown; Chance to inflict Burn.</td>
+    </tr>
+
+    <tr>
+      <td>Flare Tornado (フレアトーネード)</td>
+      <td>Fire</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>Forces downed enemies to stand then knocks them down again.</td>
+      <td>Leia + Milla. Spiral Strike + Flame Ring.</td>
+      <td>Stand Up; Knockdown; Chance to inflict Burn.</td>
+    </tr>
+
+    <tr>
+      <td>Fairy Circle (フェアリーサークル)</td>
+      <td>Wind</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Milla. Heal + Arrivederci.</td>
+      <td>Heals HP to all allies; Chance to inflict Paralysis on enemies.</td>
+    </tr>
+
+    <tr>
+      <td>Blue Moon Burst (Suigetsureppa / 水月烈破) – Leia & Milla</td>
+      <td>Water</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Milla. Rabid Lunge + Splash.</td>
+      <td>Chance to inflict Weak.</td>
+    </tr>
+
+    <tr>
+      <td>Gale Blitz (Shunjinpuuga / 瞬迅風牙)</td>
+      <td>Wind</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Milla. Darting Claw + Wind Lance.</td>
+      <td>Stand Up; Chance to inflict Paralysis.</td>
+    </tr>
+
+    <tr>
+      <td>Impact Cross (Shouha Juumonji / 衝破十文字)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Alvin. Darting Claw + Sonic Thrust.</td>
+      <td>None.</td>
+    </tr>
+
+    <tr>
+      <td>Invigorating Rain (Ail Shower / エールシャワー)</td>
+      <td>Water</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>Heals more quickly after 200 uses.</td>
+      <td>Leia + Alvin. Heal + Squall Shot.</td>
+      <td>Heals 50% HP and boosts physical and magical attack for all allies.</td>
+    </tr>
+
+    <tr>
+      <td>Spinning Thunder (Gouha Tenbuyou / 轟覇転武踊)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Alvin. Crescent Flash + Moonlight Cleft.</td>
+      <td>None.</td>
+    </tr>
+
+    <tr>
+      <td>Ascending Streak (Riot Glider / ライオットグライダー)</td>
+      <td>Wind</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>Flight time and control options improve with usage.</td>
+      <td>Leia + Elize. Spiral Strike + Teepo Copter.</td>
+      <td>Chance to inflict Paralysis.</td>
+    </tr>
+
+    <tr>
+      <td>Revitalize (Resurrection / リザレクション)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Elize. Cure + Nurse.</td>
+      <td>Heals 160% HP over time and cures all status ailments.</td>
+    </tr>
+
+    <tr>
+      <td>Full Resurrection (Full Raise Dead / フルレイズデッド)</td>
+      <td>None</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Elize. Resurrection + Resurrection.</td>
+      <td>Revives and fully heals one ally; grants auto-revive and stat boosts.</td>
+    </tr>
+
+    <tr>
+      <td>Blue Moon Burst (Suigetsureppa / 水月烈破) – Leia & Rowen</td>
+      <td>Water</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Rowen. Rabid Lunge + Splash.</td>
+      <td>Chance to inflict Weak.</td>
+    </tr>
+
+    <tr>
+      <td>Brutal Torrent (Ryuubu Houbappa / 流舞崩爆破)</td>
+      <td>Water</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Rowen. Soaring Blast + Blue Sphere.</td>
+      <td>Chance to inflict Weak.</td>
+    </tr>
+
+    <tr>
+      <td>Stop Flow (ストップフロウ)</td>
+      <td>Fire / Water / Wind / Earth</td>
+      <td>Linked Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Leia + Rowen. Quickness + Solid Contraction.</td>
+      <td>Inflicts Time Stop on all enemies.</td>
+    </tr>
+
+    <!-- Arcane Artes -->
+    <tr class="section-row">
+      <td colspan="8">Arcane Artes (奥義 - Ougi)</td>
+    </tr>
+
+    <tr>
+      <td>Soulstoke Spin (Kasshinkon Enbu / 活伸棍・円舞)</td>
+      <td>None</td>
+      <td>Arcane Arte</td>
+      <td>None</td>
+      <td>30 TP</td>
+      <td>None.</td>
+      <td>Lilium Orb: Orb 2 Node 2</td>
+      <td>N/A</td>
+    </tr>
+
+    <!-- Mystic Artes -->
+    <tr class="section-row">
+      <td colspan="8">Mystic Artes (秘奥義 - Hi Ougi)</td>
+    </tr>
+
+    <tr>
+      <td>Soulstoke Celebration (Kasshinkon Kagura / 活伸棍・神楽)</td>
+      <td>None</td>
+      <td>Mystic Arte</td>
+      <td>None</td>
+      <td>-</td>
+      <td>None.</td>
+      <td>Over Limit; use Soulstoke Spin and hold Attack.</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</table>
+</tbody>
+</table>
+  </section>
+
+<section id="panel-skills" class="panel">
+  <table id="tbl-skills">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Link</th>
+        <th>SP Cost</th>
+        <th>Requirements</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+
+       <!-- Parameter Skills -->
+      <tr class="section-row">
+    <tbody>
+      <tr class="section-row">
+        <td colspan="5">Parameter Skills (パラメータスキル)</td>
+      </tr>
+      <tr>
+        <td>Strength (ストレングス)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Strength by 5%.</td>
+      </tr>
+      <tr>
+        <td>Strength 2 (ストレングス２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Strength by 10%.</td>
+      </tr>
+      <tr>
+        <td>Vitality (スタミナ)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Vitality by 5%.</td>
+      </tr>
+      <tr>
+        <td>Vitality 2 (スタミナ２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 4</td>
+        <td>Increases Vitality by 10%.</td>
+      </tr>
+      <tr>
+        <td>Vitality 3 (スタミナ３)</td>
+        <td>Yes</td>
+        <td>6</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Vitality by 15%.</td>
+      </tr>
+      <tr>
+        <td>Agility (アジリティ)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Agility by 5%.</td>
+      </tr>
+      <tr>
+        <td>Agility 2 (アジリティ２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Agility by 10%.</td>
+      </tr>
+      <tr>
+        <td>Intelligence (インテリジェンス)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Intelligence by 5%.</td>
+      </tr>
+      <tr>
+        <td>Intelligence 2 (インテリジェンス２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Intelligence by 10%.</td>
+      </tr>
+      <tr>
+        <td>Psyche (マインド)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Psyche by 5%.</td>
+      </tr>
+      <tr>
+        <td>Psyche 2 (マインド２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Psyche by 10%.</td>
+      </tr>
+      <tr>
+        <td>Dexterity (デクステリティ)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 7</td>
+        <td>Increases Dexterity by 5%.</td>
+      </tr>
+      <tr>
+        <td>Dexterity 2 (デクステリティ２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 6</td>
+        <td>Increases Dexterity by 10%.</td>
+      </tr>
+      <tr>
+        <td>Stamina (バイタリティ)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 1</td>
+        <td>Increases max HP by 5%.</td>
+      </tr>
+      <tr>
+        <td>Stamina 2 (バイタリティ２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>Increases max HP by 10%.</td>
+      </tr>
+      <tr>
+        <td>Spirit (スピリッツ)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 4</td>
+        <td>Increases max TP by 5%.</td>
+      </tr>
+      <tr>
+        <td>Spirit 2 (スピリッツ２)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 4</td>
+        <td>Increases max TP by 10%.</td>
+      </tr>
+      <tr>
+        <td>Assault (Exceed 1 / エクシード)</td>
+        <td>No</td>
+        <td>8</td>
+        <td>Lilium Orb: Orb 1 Node 3</td>
+        <td>Increases max AC by 1.</td>
+      </tr>
+      <tr>
+        <td>Assault 2 (Exceed 2 / エクシード２)</td>
+        <td>No</td>
+        <td>10</td>
+        <td>Lilium Orb: Orb 1 Node 5</td>
+        <td>Increases max AC by 1.</td>
+      </tr>
+      <tr>
+        <td>Assault 3 (Exceed 3 / エクシード３)</td>
+        <td>No</td>
+        <td>12</td>
+        <td>Lilium Orb: Orb 2 Node 2</td>
+        <td>Increases max AC by 1.</td>
+      </tr>
+      <tr>
+        <td>Linked Action (Exceed Link / エクシードリンク)</td>
+        <td>Yes</td>
+        <td>12</td>
+        <td>Skill Tome: &quot;Vigor Shared&quot;</td>
+        <td>Increases max AC by 1; linked partner also gains +1 AC.</td>
+      </tr>
+      <tr>
+        <td>Solid Guard (ウィルガード)</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 1 Node 2</td>
+        <td>Decreases damage received while guarding.</td>
+      </tr>
+      <tr>
+        <td>Earth Guard (アースガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 3</td>
+        <td>Increases resistance to Earth damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Water Guard (アクアガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 6</td>
+        <td>Increases resistance to Water damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Fire Guard (ファイアガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>Increases resistance to Fire damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Wind Guard (ウィンドガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 3</td>
+        <td>Increases resistance to Wind damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Light Guard (ライトガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 2 Node 2</td>
+        <td>Increases resistance to Light damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Dark Guard (ダークガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>Increases resistance to Dark damage by 30%.</td>
+      </tr>
+      <tr>
+        <td>Life Up (ライフアップ)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 1</td>
+        <td>1% chance to increase max HP by 2% after battle.</td>
+      </tr>
+      <tr>
+        <td>Mind Up (メンタルアップ)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 1</td>
+        <td>1% chance to increase max TP by 1% after battle.</td>
+      </tr>
+      <tr>
+        <td>Happiness (ハピネスシング)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Skill Tome: &quot;Joyful Guide&quot;</td>
+        <td>5% chance to increase EXP earned by 10% at end of battle.</td>
+      </tr>
+      <tr>
+        <td>EXP Share (イメージトレーニング)</td>
+        <td>No</td>
+        <td>1</td>
+        <td>Skill Tome: &quot;Soul Dividend&quot;</td>
+        <td>Receives bonus EXP even when not in the active party.</td>
+      </tr>
+      <tr>
+        <td>Link Brigade (メニメニリンク)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 2 Node 2</td>
+        <td>Increases EXP gained based on the number of links in battle.</td>
+      </tr>
+
+      <tr class="section-row">
+        <td colspan="5">Action Skills (アクションスキル)</td>
+      </tr>
+      <tr>
+        <td>Magic Guard (マジックガード)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 1</td>
+        <td>Press Guard + Down to reduce magical damage; effect improves while held.</td>
+      </tr>
+      <tr>
+        <td>All Guard (オールガード)</td>
+        <td>No</td>
+        <td>6</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>Allows &quot;Magic Guard&quot; to also reduce physical damage.</td>
+      </tr>
+      <tr>
+        <td>Minimum Damage (１ダメージ / 1 Damage)</td>
+        <td>No</td>
+        <td>1</td>
+        <td>Skill Tome: &quot;Pinprick&quot;</td>
+        <td>All attacks deal 1 damage.</td>
+      </tr>
+      <tr>
+        <td>Mirage Step (ステッパー)</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 2 Node 5</td>
+        <td>Backsteps and front steps no longer consume AC.</td>
+      </tr>
+      <tr>
+        <td>Combo Siphon (コンボメンタルサプライ)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 4</td>
+        <td>Recover 1% TP every 9 hits in a combo.</td>
+      </tr>
+      <tr>
+        <td>Momentary Gain (スプレンダーアサルト)</td>
+        <td>No</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 1 Node 1</td>
+        <td>Gain 3 AC when backstepping a grounded melee attack.</td>
+      </tr>
+      <tr>
+        <td>Mirage Assault (ムーヴィングアサルト)</td>
+        <td>Yes</td>
+        <td>9</td>
+        <td>Lilium Orb: Orb 1 Node 6</td>
+        <td>Holding L1 causes attacks to move with a sidestep.</td>
+      </tr>
+      <tr>
+        <td>Flash Guard (フラッシュガード)</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 1 Node 2</td>
+        <td>Reduces damage by 90% with a perfectly timed guard.</td>
+      </tr>
+      <tr>
+        <td>TP Restoration Guard (ＴＰドレインガード)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 3</td>
+        <td>Recover 25% max TP on a successful Flash Guard.</td>
+      </tr>
+      <tr>
+        <td>Casting Window (スライドリンクアーツ)</td>
+        <td>Yes</td>
+        <td>6</td>
+        <td>Lilium Orb: Orb 2 Node 1</td>
+        <td>Allows Linked Artes to activate during casting.</td>
+      </tr>
+      <tr>
+        <td>Aerial Jump (エアリアルジャンプ)</td>
+        <td>Yes</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>Enables a second jump while airborne.</td>
+      </tr>
+      <tr>
+        <td>Steal Plus (スティールプラス)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 3</td>
+        <td>Increases steal success rate by 30%.</td>
+      </tr>
+      <tr>
+        <td>Mobile Armor (ムーヴドアーマー)</td>
+        <td>Yes</td>
+        <td>20</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>Cannot be staggered while free running.</td>
+      </tr>
+      <tr>
+        <td>Immediate Consumption (グッドジョブ / Item Pro)</td>
+        <td>Yes</td>
+        <td>7</td>
+        <td>Lilium Orb: Orb 1 Node 4</td>
+        <td>Removes recovery time after using an item.</td>
+      </tr>
+      <tr>
+        <td>Chain Consumption (スピードアイテム)</td>
+        <td>Yes</td>
+        <td>14</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>Removes cooldown time after using an item.</td>
+      </tr>
+      <tr>
+        <td>Health Jog (ランナーサプライHP)</td>
+        <td>Yes</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 1 Node 6</td>
+        <td>Recovers HP while free running.</td>
+      </tr>
+      <tr>
+        <td>Mental Jog (ランナーサプライTP)</td>
+        <td>Yes</td>
+        <td>7</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>Recovers TP while free running.</td>
+      </tr>
+      <tr>
+        <td>Bonus Extension (スティックプラス)</td>
+        <td>No</td>
+        <td>7</td>
+        <td>Lilium Orb: Orb 2 Node 2</td>
+        <td>Extends &quot;Elongating Staff&quot; duration by 3 seconds.</td>
+      </tr>
+      <tr>
+        <td>Bonus Extension 2 (スティックプラス2)</td>
+        <td>No</td>
+        <td>7</td>
+        <td>Lilium Orb: Orb 2 Node 5</td>
+        <td>Allows &quot;Elongating Staff&quot; to activate from Flash Guard.</td>
+      </tr>
+      <tr>
+        <td>Steal Psyche (スティールメンタルプラス)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 3</td>
+        <td>Recover 5% max TP when successfully stealing.</td>
+      </tr>
+      <tr>
+        <td>EXP Reward (スプレンダーEXP)</td>
+        <td>Yes</td>
+        <td>12</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>Doubles EXP from the next enemy defeated after a backstep evade.</td>
+      </tr>
+      <tr>
+        <td>Sky Soldier (スカイソルジャー)</td>
+        <td>Yes</td>
+        <td>8</td>
+        <td>Skill Tome: &quot;Warrior Above&quot;</td>
+        <td>Increases aerial damage by 25% and reduces aerial TP cost by 25%.</td>
+      </tr>
+
+      <tr class="section-row">
+        <td colspan="5">Support Skills (サポートスキル)</td>
+      </tr>
+      <tr>
+        <td>HP Gain (ＨＰゲイン)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 2</td>
+        <td>Recovers 10% max HP after defeating an enemy.</td>
+      </tr>
+      <tr>
+        <td>TP Gain (ＴＰゲイン)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 2</td>
+        <td>Recovers 2% max TP after defeating an enemy.</td>
+      </tr>
+      <tr>
+        <td>HP Gain 2 (ＨＰゲイン２)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 4</td>
+        <td>Recovers 1% max HP every 5 hits in a combo.</td>
+      </tr>
+      <tr>
+        <td>TP Gain 2 (ＴＰゲイン２)</td>
+        <td>No</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>Recovers 1% max TP every 5 hits in a combo.</td>
+      </tr>
+      <tr>
+        <td>Immunity (イミュニティ)</td>
+        <td>No</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 1 Node 4</td>
+        <td>Reduces chance of physical status ailments by 50%.</td>
+      </tr>
+      <tr>
+        <td>Limit Fever (リミッツフィーバー)</td>
+        <td>No</td>
+        <td>6</td>
+        <td>Lilium Orb: Orb 2 Node 5</td>
+        <td>Artes do not consume TP during Overlimit.</td>
+      </tr>
+      <tr>
+        <td>Over Extension (リミター)</td>
+        <td>Yes</td>
+        <td>7</td>
+        <td>Lilium Orb: Orb 2 Node 3</td>
+        <td>Extends Overlimit duration by 2 seconds.</td>
+      </tr>
+      <tr>
+        <td>Over Extension 2 (リミター２)</td>
+        <td>Yes</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 2 Node 3</td>
+        <td>Extends Overlimit by 1 second when a Linked Arte connects (once per Linked Arte).</td>
+      </tr>
+      <tr>
+        <td>Over Extension 3 (リミター３)</td>
+        <td>Yes</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>Extends Overlimit by 2 seconds when a Linked Arte connects after changing partners (once per Linked Arte).</td>
+      </tr>
+      <tr>
+        <td>HP Surge (リバイバルエナジーＨＰ)</td>
+        <td>No</td>
+        <td>12</td>
+        <td>Lilium Orb: Orb 2 Node 3</td>
+        <td>Revives with full HP after being knocked out.</td>
+      </tr>
+      <tr>
+        <td>TP Surge (リバイバルエナジーＴＰ)</td>
+        <td>No</td>
+        <td>10</td>
+        <td>Lilium Orb: Orb 2 Node 3</td>
+        <td>Revives with full TP after being knocked out.</td>
+      </tr>
+      <tr>
+        <td>TP Combo Support (コンボＴＰサポート)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 2</td>
+        <td>Reduces TP cost based on normal attacks used by a linked ally.</td>
+      </tr>
+      <tr>
+        <td>Advantageous Assault (アサルトコンディション)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 2 Node 2</td>
+        <td>Recovers 2% max TP when attacking a status-affected enemy with a normal attack.</td>
+      </tr>
+      <tr>
+        <td>Level Restore (グロウアップヒール)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 1</td>
+        <td>Fully restores HP and TP upon leveling up.</td>
+      </tr>
+      <tr>
+        <td>Fury Stoke (アピールターゲット)</td>
+        <td>No</td>
+        <td>1</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>After using Taunt, enemies stop targeting this character for 5 seconds.</td>
+      </tr>
+      <tr>
+        <td>HP Bench Warmer (ベンチウォーマーＨＰ)</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>Recovers HP while not in the active party.</td>
+      </tr>
+      <tr>
+        <td>TP Bench Warmer (ベンチウォーマーＴＰ)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>Recovers TP while not in the active party.</td>
+      </tr>
+      <tr>
+        <td>Heal Share Plus (ヒールシェアプラス)</td>
+        <td>No</td>
+        <td>8</td>
+        <td>Lilium Orb: Orb 2 Node 1</td>
+        <td>Increases shared healing while linked from 25% to 50%.</td>
+      </tr>
+      <tr>
+        <td>Sustained Limit (リミッツキープ)</td>
+        <td>No</td>
+        <td>8</td>
+        <td>Skill Tome: &quot;Widened Limits&quot;</td>
+        <td>Extends Overlimit duration after using an Arcane Arte.</td>
+      </tr>
+      <tr>
+        <td>Impregnable Guard (ハイガード)</td>
+        <td>Yes</td>
+        <td>8</td>
+        <td>Skill Tome: &quot;Absolute Defense&quot;</td>
+        <td>Prevents guard break.</td>
+      </tr>
+      <tr>
+        <td>Life Reversal (ライフリバース)</td>
+        <td>Yes</td>
+        <td>8</td>
+        <td>Lilium Orb: Orb 2 Node 8</td>
+        <td>Gradually recovers half of the most recent damage taken.</td>
+      </tr>
+      <tr>
+        <td>Recall (リコール)</td>
+        <td>No</td>
+        <td>8</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>40% chance to auto-revive once per battle.</td>
+      </tr>
+      <tr>
+        <td>Last Stand (メンタルディフェンス)</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Lilium Orb: Orb 1 Node 5</td>
+        <td>Reduces damage taken by 75% while HP is below 25%.</td>
+      </tr>
+      <tr>
+        <td>Lottery (サーチガルド)</td>
+        <td>No</td>
+        <td>4</td>
+        <td>Lilium Orb: Orb 1 Node 6</td>
+        <td>25% chance to double Gald gained after battle.</td>
+      </tr>
+      <tr>
+        <td>Item Knowledge (アイテムユーザー)</td>
+        <td>Yes</td>
+        <td>5</td>
+        <td>Lilium Orb: Orb 2 Node 4</td>
+        <td>Increases effectiveness of items used by this character.</td>
+      </tr>
+      <tr>
+        <td>Item Spawn (アイテムピッカー)</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 1 Node 4</td>
+        <td>Doubles item drop rate.</td>
+      </tr>
+      <tr>
+        <td>Bottled Efficacy (ホーリィ&amp;ダークブレス)</td>
+        <td>No</td>
+        <td>1</td>
+        <td>Lilium Orb: Orb 1 Node 5</td>
+        <td>Doubles duration of Holy Bottle and Dark Bottle.</td>
+      </tr>
+      <tr>
+        <td>Self-Sacrifice (サクリファイス)</td>
+        <td>No</td>
+        <td>12</td>
+        <td>Skill Tome: &quot;Gift of Life&quot;</td>
+        <td>When supporting, trades all HP and TP to revive the leader with the same amounts.</td>
+      </tr>
+      <tr>
+        <td>Lucky Item (ラッキーアイテム)</td>
+        <td>Yes</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 1 Node 8</td>
+        <td>10% chance not to consume an item on use.</td>
+      </tr>
+      <tr>
+        <td>Multi-Item (アイテムエヴリワン)</td>
+        <td>Yes</td>
+        <td>13</td>
+        <td>Lilium Orb: Orb 2 Node 7</td>
+        <td>Recovery items affect all allies at half potency.</td>
+      </tr>
+      <tr>
+        <td>Treasure Fang (トレジャーファング)</td>
+        <td>No</td>
+        <td>2</td>
+        <td>Lilium Orb: Orb 1 Node 5</td>
+        <td>Fixed chance to steal when escaping from battle.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+      </tbody>
+    </table>
+  </section>
+
+<table id="tbl-weapons">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Element</th>
+      <th>P. ATK</th>
+      <th>A. ATK</th>
+      <th>Cost</th>
+      <th>Sell</th>
+      <th>Acquisition</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Quarterstaff (ウォースタッフ / War Staff)</td>
+      <td>None</td>
+      <td>224</td>
+      <td>201</td>
+      <td>3100</td>
+      <td>1085</td>
+      <td>Shop Lv 17. Inital for Leia</td>
+    </tr>
+
+    <tr>
+      <td>Lead Shaft (レッドシャフト)</td>
+      <td>Earth</td>
+      <td>271</td>
+      <td>242</td>
+      <td>4370</td>
+      <td>1529</td>
+      <td>Shop Lv 22</td>
+    </tr>
+
+    <tr>
+      <td>Wind Striker (ウィンドヒッター / Wind Hitter)</td>
+      <td>Wind</td>
+      <td>318</td>
+      <td>282</td>
+      <td>5840</td>
+      <td>2044</td>
+      <td>Shop Lv 27</td>
+    </tr>
+
+    <tr>
+      <td>Silver Rod (シルバーロッド)</td>
+      <td>None</td>
+      <td>364</td>
+      <td>322</td>
+      <td>7490</td>
+      <td>2621</td>
+      <td>Shop Lv 32</td>
+    </tr>
+
+    <tr>
+      <td>Jingu Bang (金箍棒・朱花 / Kinkobou Akebana)</td>
+      <td>Earth</td>
+      <td>411</td>
+      <td>362</td>
+      <td>9390</td>
+      <td>3286</td>
+      <td>Shop Lv 37</td>
+    </tr>
+
+    <tr>
+      <td>Bison Bat (バイソンバット)</td>
+      <td>None</td>
+      <td>457</td>
+      <td>403</td>
+      <td>11490</td>
+      <td>4021</td>
+      <td>Shop Lv 42</td>
+    </tr>
+
+    <tr>
+      <td>Feather Float (軽鉱棒・綿羽 / Keikoubou Watabane)</td>
+      <td>None</td>
+      <td>504</td>
+      <td>443</td>
+      <td>13800</td>
+      <td>4830</td>
+      <td>Shop Lv 47</td>
+    </tr>
+
+    <tr>
+      <td>Fountain Rod (ファウンテンロッド)</td>
+      <td>Water</td>
+      <td>551</td>
+      <td>483</td>
+      <td>16320</td>
+      <td>5712</td>
+      <td>Shop Lv 52</td>
+    </tr>
+
+    <tr>
+      <td>Flint Pole (フリントポール)</td>
+      <td>Fire</td>
+      <td>598</td>
+      <td>523</td>
+      <td>19050</td>
+      <td>6667</td>
+      <td>Shop Lv 57</td>
+    </tr>
+
+    <tr>
+      <td>Rune Staff (ルーンスタッフ)</td>
+      <td>None</td>
+      <td>643</td>
+      <td>564</td>
+      <td>21990</td>
+      <td>7696</td>
+      <td>Shop Lv 62</td>
+    </tr>
+
+    <tr>
+      <td>Hanuman Shaft (ハヌマンシャフト)</td>
+      <td>None</td>
+      <td>690</td>
+      <td>604</td>
+      <td>25140</td>
+      <td>8799</td>
+      <td>Shop Lv 67</td>
+    </tr>
+
+    <tr>
+      <td>Mythril Rod (ミスリルロッド)</td>
+      <td>None</td>
+      <td>737</td>
+      <td>644</td>
+      <td>28510</td>
+      <td>9978</td>
+      <td>Shop Lv 72</td>
+    </tr>
+
+    <tr>
+      <td>Gravity Rod (万引棒・星土 / Manbikibou Hoshitsuchi)</td>
+      <td>Earth</td>
+      <td>784</td>
+      <td>684</td>
+      <td>32080</td>
+      <td>11228</td>
+      <td>Shop Lv 77</td>
+    </tr>
+
+    <tr>
+      <td>Gale Rod (ヴェッターシャフト / Wetterschaft)</td>
+      <td>Wind</td>
+      <td>830</td>
+      <td>725</td>
+      <td>35880</td>
+      <td>12258</td>
+      <td>Shop Lv 82</td>
+    </tr>
+
+    <tr>
+      <td>Mile High (ラインハイツ / Line Heights)</td>
+      <td>None</td>
+      <td>877</td>
+      <td>765</td>
+      <td>39880</td>
+      <td>13958</td>
+      <td>Shop Lv 87</td>
+    </tr>
+
+    <tr>
+      <td>Black Brush (画影棍・闇筆 / Gaeikon Yamifude)</td>
+      <td>Dark</td>
+      <td>923</td>
+      <td>805</td>
+      <td>44070</td>
+      <td>15424</td>
+      <td>Shop Lv 92</td>
+    </tr>
+
+    <tr>
+      <td>Fossil Rod (樹珪棍・玉枝 / Jukeikon Tamaeda)</td>
+      <td>None</td>
+      <td>970</td>
+      <td>845</td>
+      <td>48490</td>
+      <td>16971</td>
+      <td>Shop Lv 97</td>
+    </tr>
+
+    <tr>
+      <td>Solreina, Rod of the Heavens (天顕杵ソルレイナウィル / Tenkensho Solreina)</td>
+      <td>Light</td>
+      <td>1000</td>
+      <td>869</td>
+      <td>52200</td>
+      <td>18270</td>
+      <td>Shop Lv 100</td>
+    </tr>
+
+    <tr>
+      <td>Gimme-Dat! (必盗！それくれニャ)</td>
+      <td>None</td>
+      <td>750</td>
+      <td>450</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Reward from Leia's Grand Master arena.</td>
+    </tr>
+
+    <tr>
+      <td>Padvent, the Incantor (唱魔棍パードベンテ)</td>
+      <td>None</td>
+      <td>740*</td>
+      <td>700*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Drop: Roparde. ATK scales with enemies felled while linked after the 'Golden Mage Knight' subevent.</td>
+    </tr>
+
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+
+
+
+  </section>
+</main>
+
+<footer>&copy; 2025 Tales Archive</footer>
+
+<script>
+  // Tabs
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".panel");
+
+  tabs.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((p) => p.classList.remove("active"));
+      btn.classList.add("active");
+      document
+        .getElementById("panel-" + btn.dataset.tab)
+        .classList.add("active");
+    });
+  });
+
+  // Simple artes table search (works on whatever rows you add)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
+
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
+
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
+
