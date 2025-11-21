@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Chat</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Chat</title>
 
   <style>
     :root {
@@ -223,6 +223,13 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
@@ -245,11 +252,11 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Chat
+    <a href="../../index.html">Tales of Eternia</a> &bull; Chat
   </div>
 </header>
 
@@ -262,21 +269,9 @@
     <div>
       <h1>Chat</h1>
 
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
-
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,39 +285,178 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
+      <!-- Chat – Artes -->
+<tr class="section-row">
+  <td colspan="7">Skills (術・技 - Jutsu-Waza - "Artes")</td>
+</tr>
+
+<tr>
+  <td>Pow Hammer<br><span class="jp">ピコハン (Pikohan)</span></td>
+  <td>Earth</td>
+  <td>1</td>
+  <td>1</td>
+  <td>12</td>
+  <td>Combo: ↓ ↘ → + Skill</td>
+  <td>30% chance to inflict Dizzy on enemies hit</td>
+</tr>
+
+<tr>
+  <td>Toss Hammer<br><span class="jp">ポイハン (Poihan)</span></td>
+  <td>Water</td>
+  <td>1</td>
+  <td>1</td>
+  <td>16</td>
+  <td>
+    Obtained at Celestia (GPS 183, 130)<br>
+    Combo: → ↓ ↘ + Skill
+  </td>
+  <td>20% chance to inflict Poison on enemies hit</td>
+</tr>
+
+<tr>
+  <td>Ice Hammer<br><span class="jp">コチハン (Kochihan)</span></td>
+  <td>Ice</td>
+  <td>1</td>
+  <td>1</td>
+  <td>20</td>
+  <td>
+    Obtained at Inferia (GPS 118, 122)<br>
+    Combo: ↓ ↓ + Skill
+  </td>
+  <td>4% chance to inflict Freeze on enemies hit</td>
+</tr>
+
+<tr>
+  <td>Rover Tool<br><span class="jp">ローバーアイテム (Robber Item)</span></td>
+  <td>-</td>
+  <td>2</td>
+  <td>2</td>
+  <td>15</td>
+  <td>Combo: → ← → + Skill</td>
+  <td>Chance to steal an item from the targeted enemy</td>
+</tr>
+
+<tr>
+  <td>Para Ball<br><span class="jp">パラライボール (Paraly Ball)</span></td>
+  <td>Lightning</td>
+  <td>2</td>
+  <td>2</td>
+  <td>16</td>
+  <td>
+    Obtained at the Craymel Hot Springs<br>
+    Combo: ← ↙ ↓ ↘ → + Skill
+  </td>
+  <td>6% chance to inflict Stun on enemies hit</td>
+</tr>
+
+<tr>
+  <td>Eternal Hammer<br><span class="jp">エターナルスロー (Eternal Throw)</span></td>
+  <td>-</td>
+  <td>3</td>
+  <td>Continuous</td>
+  <td>Consumes TP until 0</td>
+  <td>
+    Obtained at Aifread's Cavern<br>
+    Combo: ↓ ↙ ← ↙ ↓ ↘ → + Skill
+  </td>
+  <td>
+    Continuously throws hammers while TP drains<br>
+    Hold ← or → to adjust position slightly without changing facing
+  </td>
+</tr>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
         <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
-          <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
         </tr>
+      </thead>
+      <tbody>
+<tr>
+  <td>Captain</td>
+  <td>キャプテン</td>
+  <td>Captain</td>
+  <td>Default title</td>
+</tr>
+
+<tr>
+  <td>Voyager</td>
+  <td>パイレーツ</td>
+  <td>Pirates</td>
+  <td>Be level 20</td>
+</tr>
+
+<tr>
+  <td>Pirate</td>
+  <td>バイキング</td>
+  <td>Viking</td>
+  <td>Be level 40</td>
+</tr>
+
+<tr>
+  <td>Viking</td>
+  <td>だいかいぞく</td>
+  <td>Daikaizoku</td>
+  <td>Be level 60</td>
+</tr>
+
+<tr>
+  <td>Sea King</td>
+  <td>かいぞくおう</td>
+  <td>Kaizoku-ou (Pirate King)</td>
+  <td>Be level 99</td>
+</tr>
+
+<tr>
+  <td>Gadget Master</td>
+  <td>メカなげマスター</td>
+  <td>Mecha-nage Master</td>
+  <td>Learn all skills</td>
+</tr>
+
+<tr>
+  <td>Kitchen King</td>
+  <td>ちゅうぼうキング</td>
+  <td>Chuubou King</td>
+  <td>Master all dishes</td>
+</tr>
+
+<tr>
+  <td>First Officer</td>
+  <td>いっとうこうかいし</td>
+  <td>Ittoukoukaishi</td>
+  <td>Win the "Around the Celestia" mini-game within 2'32"</td>
+</tr>
+
+<tr>
+  <td>Sea Lover</td>
+  <td>うみがすき</td>
+  <td>Umi ga Suki</td>
+  <td>Obtain the Van Eltia's last conversion</td>
+</tr>
+
+<tr>
+  <td>Interior Decorator</td>
+  <td>がんこしょくにん</td>
+  <td>Gankoshoukunin</td>
+  <td>Fill all four of the Van Eltia's cabins</td>
+</tr>
       </tbody>
     </table>
   </section>
@@ -333,22 +467,76 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Power</th>
+          <th>Thrust</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
+          <th>Cost</th>
+          <th>Sell</th>
           <th>Acquisition</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
-        </tr>
+
+ <tr class="section-row">
+  <td colspan="8">Bags</td>
+</tr>
+
+<tr>
+  <td>Chat Bag<br><span class="jp">チャットバッグ</span></td>
+  <td>315</td>
+  <td>0</td>
+  <td>0</td>
+  <td>-</td>
+  <td>-</td>
+  <td>5400 Gald</td>
+  <td>Initial: Chat</td>
+</tr>
+
+<tr>
+  <td>Tote Bag<br><span class="jp">トートバッグ</span></td>
+  <td>400</td>
+  <td>0</td>
+  <td>0</td>
+  <td>-</td>
+  <td>11800 Gald</td>
+  <td>5900 Gald</td>
+  <td>Shop: Peruti</td>
+</tr>
+
+<tr>
+  <td>Big Bag<br><span class="jp">ビッグバッグ</span></td>
+  <td>480</td>
+  <td>0</td>
+  <td>0</td>
+  <td>-</td>
+  <td>-</td>
+  <td>9500 Gald</td>
+  <td>Chest: Ruins of Volt</td>
+</tr>
+
+<tr>
+  <td>Luck Bag<br><span class="jp">ラックバッグ</span></td>
+  <td>720</td>
+  <td>0</td>
+  <td>0</td>
+  <td>-</td>
+  <td>-</td>
+  <td>46000 Gald</td>
+  <td>Chest: Shizel's Castle<br>Luck +30</td>
+</tr>
+
+<tr>
+  <td>Wonder Bag<br><span class="jp">ワンダーバッグ</span></td>
+  <td>780</td>
+  <td>0</td>
+  <td>0</td>
+  <td>-</td>
+  <td>-</td>
+  <td>58000 Gald</td>
+  <td>Drop: Gunner<br>Luck +8, 1% TP recovery chance on hit</td>
+</tr>
+
       </tbody>
     </table>
   </section>
@@ -372,64 +560,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-

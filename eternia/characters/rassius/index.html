@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Rassius</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Rassius Luine</title>
 
   <style>
     :root {
@@ -223,6 +223,13 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
@@ -245,38 +252,26 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Rassius
+    <a href="../../index.html">Tales of Eternia</a> &bull; Rassius Luine
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
     <div class="thumb">
-      <img src="../../../images/eternia/rassius-status.jpg" alt="Rassius status art">
+      <img src="../../../images/eternia/rassius-status.jpg" alt="ras status art">
     </div>
 
     <div>
-      <h1>Rassius</h1>
-
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
+      <h1>Rassius Luine</h1>
 
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,39 +285,103 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Martial Artes -->
+      <tr class="section-row">
+  <td colspan="8">Special Skills (特技 - Tokugi - "Base Artes")</td>
+</tr>
+
+<tr>
+  <td>Neo Swarm<br><span class="aka">Sword Rain: Alpha</span></td>
+  <td><span class="jp">秋沙雨</span><br>Akisazame</td>
+  <td>-</td>
+  <td>-</td>
+  <td>11</td>
+  <td>12</td>
+  <td>Default</td>
+  <td>
+    Final thrust can be cancelled into a Sacred Skill after 350+ uses
+  </td>
+</tr>
+
+<tr>
+  <td>Super Lightning Blade</td>
+  <td><span class="jp">風雷神剣</span><br>Fuuraijinken</td>
+  <td>Wind / Lightning</td>
+  <td>
+-
+  </td>
+  <td>4</td>
+  <td>8</td>
+  <td>Default</td>
+  <td>
+    First hit must stagger the enemy to continue the attack
+  </td>
+</tr>
+<tr class="section-row">
+  <td colspan="8">Sacred Skills (奥義 - Ougi - "Arcane Artes")</td>
+</tr>
+
+<tr>
+  <td>Dragon Swarm</td>
+  <td><span class="jp">爪竜連牙斬</span><br>Souryuu Rengazan</td>
+  <td>Physical</td>
+  <td>-</td>
+  <td>?</td>
+  <td>12</td>
+  <td>Default</td>
+  <td>-</td>
+</tr>
+
+<tr>
+  <td>Dragon Flash</td>
+  <td><span class="jp">爪竜斬光剣</span><br>Souryuu Zankouken</td>
+  <td>Light</td>
+  <td>-</td>
+  <td>?</td>
+  <td>16</td>
+  <td>Default</td>
+  <td>-</td>
+</tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
         <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
-          <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
         </tr>
+      </thead>
+      <tbody>
+        <tr>
+  <td>Traveling Salesman</td>
+  <td>たびのしょうにん</td>
+  <td>Tabi no Shounin</td>
+  <td>Default title</td>
+</tr>
+
+<tr>
+  <td>Mr. Incorrigible</td>
+  <td>ねっけつしょうにん</td>
+  <td>Nekketsu Shounin</td>
+  <td>Reach level 30</td>
+</tr>
+
       </tbody>
     </table>
   </section>
@@ -333,22 +392,34 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Slash</th>
+          <th>Thrust</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
+          <th>Cost</th>
+          <th>Sell</th>
           <th>Acquisition</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
-        </tr>
+
+   <tr class="section-row">
+  <td colspan="7">Rapiers</td>
+</tr>
+
+<tr>
+  <td>Saint Rapier<br><span class="jp">セイントレイピア</span></td>
+  <td>100</td>
+  <td>200</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>
+    Initial: Ras<br>
+    Permanently equipped
+  </td>
+</tr>
+
       </tbody>
     </table>
   </section>
@@ -372,64 +443,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-

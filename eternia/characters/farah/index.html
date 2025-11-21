@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Farah</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Farah</title>
 
   <style>
     :root {
@@ -223,6 +223,13 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
@@ -245,38 +252,26 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Farah
+    <a href="../../index.html">Tales of Eternia</a> &bull; Farah Oersted
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
     <div class="thumb">
-      <img src="../../../images/eternia/farah-status.jpg" alt="Farah status art">
+      <img src="../../../images/eternia/Farah-status.jpg" alt="Farah status art">
     </div>
 
     <div>
-      <h1>Farah</h1>
-
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
+      <h1>Farah Oersted</h1>
 
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,38 +285,530 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Farah – Ground Artes (地上技 - Chijouwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Ground Artes (地上技 - Chijouwaza)</td>
+        </tr>
+
         <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
+          <td>Palm Strike</td>
+          <td>掌底破 (Shouteiha)</td>
+          <td>-</td>
+          <td>1</td>
+          <td>4</td>
+          <td>
+            Punch Lv 2, Kick Lv 1<br>
+            Combo: ↓ ↘ → + Attack
+          </td>
+          <td>Punch × 1.80 × 1</td>
+        </tr>
+
+        <tr>
+          <td>Triple Blossom</td>
+          <td>三散華 (Sazanka / "Cerberus Strike")</td>
+          <td>-</td>
+          <td>3</td>
+          <td>6</td>
+          <td>
+            Punch Lv 1, Kick Lv 2<br>
+            Combo: ↓ ↘ → + Skill
+          </td>
+          <td>Kick × 0.80 × 3</td>
+        </tr>
+
+        <tr>
+          <td>Sonic Fist</td>
+          <td>連牙弾 (Rengadan / "Talon Storm")</td>
+          <td>-</td>
+          <td>6</td>
+          <td>8</td>
+          <td>
+            Punch Lv 5, Kick Lv 2<br>
+            Combo: → ← → + Attack
+          </td>
+          <td>
+            Punch × 0.40 × 5<br>
+            Punch × 1.00 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mirage</td>
+          <td>飛葉翻歩 (Hiyouhonpo / "Falling Leaf")</td>
+          <td>-</td>
+          <td>10</td>
+          <td>15</td>
+          <td>
+            Punch Lv 15, Kick Lv 15<br>
+            Combo: ↓ ↓ + Defend
+          </td>
+          <td>Moves forward through enemies while invincible</td>
+        </tr>
+
+        <!-- Farah – Anti-Air Artes (対空技 - Taikuuwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Anti-Air Artes (対空技 - Taikuuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Swallow Dance</td>
+          <td>飛燕連脚 (Hienrenkyaku)</td>
+          <td>-</td>
+          <td>3</td>
+          <td>7</td>
+          <td>
+            Punch Lv 4, Kick Lv 5<br>
+            Combo: → ↓ ↘ + Skill
+          </td>
+          <td>Kick × 0.90 × 3</td>
+        </tr>
+
+        <tr>
+          <td>Rising Dragon Strike</td>
+          <td>臥龍空破 (Garyoukuuha / "Dragon Shot")</td>
+          <td>Wind / Lightning</td>
+          <td>4</td>
+          <td>12</td>
+          <td>
+            Punch Lv 8, Kick Lv 4<br>
+            Palm Strike used 10+ times<br>
+            Sonic Fist used 30+ times<br>
+            Combo: → ↓ ↘ + Attack
+          </td>
+          <td>
+            Punch × 2.00 × 2<br>
+            Punch × 2.00 × 1<br>
+            Punch × 1.10 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Super Swallow Dance</td>
+          <td>飛燕連天脚 (Hien Rentenkyaku)</td>
+          <td>-</td>
+          <td>4</td>
+          <td>13</td>
+          <td>
+            Punch Lv 9, Kick Lv 18<br>
+            Swallow Dance used 180+ times<br>
+            Combo: → ↓ ↘ + Skill + Defend
+          </td>
+          <td>Kick × 1.20 × 4</td>
+        </tr>
+
+        <!-- Farah – Air Artes (空中技 - Kuuchuuwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Air Artes (空中技 - Kuuchuuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Eagle Dive</td>
+          <td>鷹爪蹴撃 (Yousoushuugeki)</td>
+          <td>-</td>
+          <td>3</td>
+          <td>8</td>
+          <td>
+            Punch Lv 4, Kick Lv 8<br>
+            Swallow Dance used 40+ times<br>
+            Combo: ↓ ↓ + Skill
+          </td>
+          <td>
+            Kick × 1.50 × 2<br>
+            Kick × 1.00 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Death Blossom</td>
+          <td>散華猛襲脚 (Sanka Moushuukyaku)</td>
+          <td>-</td>
+          <td>4</td>
+          <td>12</td>
+          <td>
+            Punch Lv 11, Kick Lv 12<br>
+            Triple Blossom used 80+ times<br>
+            Eagle Dive used 30+ times<br>
+            Combo: ↓ ↘ → + Skill + Defend
+          </td>
+          <td>
+            Kick × 1.60 × 1<br>
+            Kick × 0.80 × 3
+          </td>
+        </tr>
+
+        <tr>
+          <td>Eagle Rage</td>
+          <td>鷹爪落瀑蹴 (Yousou Rakubakushuu / "Eagle's Rage")</td>
+          <td>Water</td>
+          <td>4</td>
+          <td>20</td>
+          <td>
+            Punch Lv 22, Kick Lv 25<br>
+            Death Blossom used 160+ times<br>
+            Super Swallow Dance used 100+ times<br>
+            Combo: ↓ ↓ + Skill + Defend
+          </td>
+          <td>
+            Kick × 1.00 × 2<br>
+            Kick × 1.80 × 2
+          </td>
+        </tr>
+
+        <!-- Farah – Power Artes (強打技 - Kyoudawaza) -->
+        <tr class="section-row">
+          <td colspan="7">Power Artes (強打技 - Kyoudawaza)</td>
+        </tr>
+
+        <tr>
+          <td>Twin Palm Strike</td>
+          <td>双撞掌底破 (Soudou Shouteiha / "Reaper's Toll")</td>
+          <td>-</td>
+          <td>2</td>
+          <td>12</td>
+          <td>
+            Punch Lv 10, Kick Lv 8<br>
+            Palm Strike used 60+ times<br>
+            Rising Dragon Strike used 30+ times<br>
+            Combo: ↓ ↘ → + Attack + Skill
+          </td>
+          <td>Punch × 2.00 × 2</td>
+        </tr>
+
+        <tr>
+          <td>Super Sonic Fist</td>
+          <td>八葉連牙 (Hachiyourenga)</td>
+          <td>-</td>
+          <td>11</td>
+          <td>18</td>
+          <td>
+            Punch Lv 16, Kick Lv 8<br>
+            Sonic Fist used 150+ times<br>
+            Combo: → ← → + Attack + Skill
+          </td>
+          <td>
+            Punch × 0.30 × 10<br>
+            Punch × 7.00 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Chi</td>
+          <td>獅子戦吼 (Shishisenkou / "Beast")</td>
+          <td>Earth</td>
+          <td>4</td>
+          <td>20</td>
+          <td>
+            Punch Lv 22, Kick Lv 14<br>
+            Twin Palm Strike used 160+ times<br>
+            Super Sonic Fist used 100+ times<br>
+            Combo: → ↓ ↘ + Attack + Skill
+          </td>
+          <td>
+            ((Punch + Kick) / 2) × 1.00 × 3<br>
+            Punch × 3.00 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Fatal Fury</td>
+          <td>殺劇舞荒拳 (Satsugeki Bukouken / "Final Fury")</td>
+          <td>Fire</td>
+          <td>21</td>
+          <td>60</td>
+          <td>
+            Punch Lv 30, Kick Lv 30<br>
+            Chi used 120+ times<br>
+            Eagle Rage used 120+ times<br>
+            Combo: ↓ ↙ ← ↙ ↓ ↘ → + Attack
+          </td>
+          <td>
+            Punch × 0.50 × 13<br>
+            Punch × 0.50 × 8
+          </td>
+        </tr>
+
+        <tr>
+          <td>Deadly Force</td>
+          <td>点穴縛態 (Tenketsubakutai)</td>
+          <td>Elemental</td>
+          <td>1</td>
+          <td>80</td>
+          <td>
+            Fight 300+ battles with Farah as party leader<br>
+            Combo: → ← → + Skill + Defend<br>
+            Cannot normally be chained to other skills
+          </td>
+          <td>((Punch + Kick) / 2) × 7.50 × 1</td>
+        </tr>
+
+        <!-- Farah – Healing Artes (回復技 - Kaifukuwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Healing Artes (回復技 - Kaifukuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Healer</td>
+          <td>治癒功 (Chiyukou)</td>
+          <td>-</td>
+          <td>-</td>
+          <td>12</td>
+          <td>
+            Obtained at the Regulus Dojo (event)<br>
+            Combo: ↓ ↑ + Skill
+          </td>
+          <td>Heals a small amount of HP to one ally</td>
+        </tr>
+
+        <tr>
+          <td>Detoxify</td>
+          <td>解毒功 (Gedokukou)</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4</td>
+          <td>
+            Obtained at Morle Village (event)<br>
+            Combo: ← ↙ ↓ ↘ → + Skill
+          </td>
+          <td>Cures Poison and Weak for one ally</td>
+        </tr>
+
+        <tr>
+          <td>Life</td>
+          <td>回生功 (Kaiseikou)</td>
+          <td>-</td>
+          <td>-</td>
+          <td>50</td>
+          <td>
+            Obtained at Farlos Church (event)<br>
+            Combo: ↓ ↙ ← ↙ ↓ ↘ → + Skill
+          </td>
+          <td>Revives one KO'd ally with a small amount of HP</td>
+        </tr>
+
+        <!-- Farah – Team Skills (協力技 - Kyouryokuwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Team Skills (協力技 - Kyouryokuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Serpent Knuckle</td>
+          <td>海龍拳 (Kairyuuken)</td>
+          <td>Lightning / Water</td>
+          <td>10</td>
+          <td>12</td>
+          <td>
+            Farah Oersted + Keele Zeibel or Meredy<br>
+            Strike Arte: Rising Dragon Strike (Garyoukuuha)<br>
+            Craymel Arte: Heal (ヒール)<br>
+            Craymel arte must finish casting as the strike arte hits
+          </td>
+          <td>
+            Punch × 1.00 × 2<br>
+            Punch × 0.80 × 8<br>
+            Heal restores 50% of Farah's max HP
+          </td>
+        </tr>
+
+        <tr>
+          <td>Lightning Strike</td>
+          <td>雷閃拳 (Raisenken)</td>
+          <td>Lightning</td>
+          <td>7</td>
+          <td>12</td>
+          <td>
+            Farah Oersted + Keele Zeibel or Meredy<br>
+            Strike Arte: Twin Palm Strike (Soudou Shouteiha)<br>
+            Craymel Arte: Thunder Blade (サンダーブレード)<br>
+            Craymel arte must finish casting as the strike arte hits
+          </td>
+          <td>INT × 1.00 × 7</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Mystic Artes -->
+    <h2>Divine Skills (秘奥義 - Hi Ougi - "Mystic Artes")</h2>
+    <table id="tbl-mystic-artes">
+      <thead>
+        <tr>
+          <th>Arte Name</th>
+          <th>Element</th>
+          <th>Max Hits</th>
+          <th>TP Cost</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Maximum Burst<br>
+            獅吼爆砕陣<br>
+            Shikou Bakusaijin ("Ground Breaker")
+          </td>
+          <td>Earth</td>
+          <td>6</td>
+          <td>50</td>
+          <td>
+            • Fatal Fury used 30+ times<br>
+            • Chi used ≥ [330 − (50 × Actions)], where <em>Actions</em> is the number of basic hits and skills chained before this extension<br>
+            • Extend from Chi by pressing Skill during the final strike<br>
+            <br>
+            Damage spread:<br>
+            ((Punch + Kick) / 2) × 1.00 × 1<br>
+            Kick × 1.00 × 1<br>
+            ((Punch + Kick) / 2) × 1.00 × 1<br>
+            Kick × 1.00 × 1<br>
+            ((Punch + Kick) / 2) × 8.00 × 1<br>
+            Kick × 1.00 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Flame Dance<br>
+            火龍炎舞<br>
+            Karyuuenbu ("Fire Dragon Rampage")
+          </td>
+          <td>Fire</td>
+          <td>5</td>
           <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+          <td>
+            • Activate Deadly Force on an enemy and freeze the screen<br>
+            • Perform the following combo on the frozen enemy:<br>
+            &nbsp;&nbsp;2 normal strikes → any Anti-Air Arte → any Air Arte<br>
+            • Automatically activates if the enemy survives and the screen is still frozen from Deadly Force<br>
+            <br>
+            Damage spread:<br>
+            ((Punch + Kick) / 2) × 1.00 × 2<br>
+            ((Punch + Kick) / 2) × 4.00 × 2<br>
+            ((Punch + Kick) / 2) × 5.00 × 1
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Farah Oersted – Titles -->
+        <tr>
+          <td>Farmer</td>
+          <td>ファーマー</td>
+          <td>Farmer</td>
+          <td>Default title</td>
+        </tr>
+
+        <tr>
+          <td>Fighter</td>
+          <td>かくとうか</td>
+          <td>Kakutouka</td>
+          <td>Reach level 10</td>
+        </tr>
+
+        <tr>
+          <td>Kung Fu Master</td>
+          <td>カンフーマスター</td>
+          <td>Kung Fu Master</td>
+          <td>Reach level 30</td>
+        </tr>
+
+        <tr>
+          <td>Silent Assassin</td>
+          <td>サイレントアサシン</td>
+          <td>Silent Assassin</td>
+          <td>Reach level 60</td>
+        </tr>
+
+        <tr>
+          <td>Iron Fist</td>
+          <td>アイアンフィスト</td>
+          <td>Iron Fist</td>
+          <td>Reach level 99</td>
+        </tr>
+
+        <tr>
+          <td>Ultimate Beauty</td>
+          <td>ぜったいかじん</td>
+          <td>Zettai Kajin</td>
+          <td>Learn all artes</td>
+        </tr>
+
+        <tr>
+          <td>Kitchen Specialist</td>
+          <td>とっきゅうちゅうし</td>
+          <td>Tokkyuuchuushi</td>
+          <td>Master all dishes</td>
+        </tr>
+
+        <tr>
+          <td>Reckless</td>
+          <td>むてっぽう</td>
+          <td>Muteppou</td>
+          <td>Obtained at Barole</td>
+        </tr>
+
+        <tr>
+          <td>Story Teller</td>
+          <td>ストーリーテラー</td>
+          <td>Story Teller</td>
+          <td>View 200+ skits</td>
+        </tr>
+
+        <tr>
+          <td>3-Star Chef</td>
+          <td>みつぼしコック</td>
+          <td>Mitsuboshi Cook</td>
+          <td>Win the first round of the Chambard cooking contest</td>
+        </tr>
+
+        <tr>
+          <td>Kitchen Star</td>
+          <td>キッチンスター</td>
+          <td>Kitchen Star</td>
+          <td>Win the second round of the Chambard cooking contest</td>
+        </tr>
+
+        <tr>
+          <td>Warrior Chef</td>
+          <td>あじむしゃ</td>
+          <td>Ajimusha</td>
+          <td>Win the third round of the Chambard cooking contest</td>
+        </tr>
+
+        <tr>
+          <td>Cupid</td>
+          <td>あいのネゴシエイター</td>
+          <td>Ai no Negotiator</td>
+          <td>
+            View all six Katherine events on Disc 1<br>
+            Meet Katherine &amp; Pierre in the Inferia City observatory (Disc 3)
+          </td>
+        </tr>
+
+        <tr>
+          <td>Kubifuri Jo'ou</td>
+          <td>くびふりじょおう</td>
+          <td>Kubifuri Jo'ou</td>
+          <td>Win Eterpocket 4</td>
         </tr>
       </tbody>
     </table>
@@ -333,21 +820,231 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Punch</th>
+          <th>Kick</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
+          <th>Cost</th>
+          <th>Sell</th>
           <th>Acquisition</th>
         </tr>
       </thead>
       <tbody>
+        <tr class="section-row">
+          <td colspan="8">Knuckles</td>
+        </tr>
+
         <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
+          <td>Leather Arms<br><span class="jp">レザーアームズ</span></td>
+          <td>60</td>
+          <td>68</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>250 Gald</td>
+          <td>Initial: Farah</td>
+        </tr>
+
+        <tr>
+          <td>Power Arms<br><span class="jp">パワーアームズ</span></td>
+          <td>67</td>
+          <td>75</td>
+          <td>3</td>
+          <td>-</td>
+          <td>400 Gald</td>
+          <td>200 Gald</td>
+          <td>Shop: Regulus Dojo</td>
+        </tr>
+
+        <tr>
+          <td>Chain Arms<br><span class="jp">チェインアームズ</span></td>
+          <td>90</td>
+          <td>92</td>
+          <td>5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>340 Gald</td>
+          <td>Chest: Nostos Cave</td>
+        </tr>
+
+        <tr>
+          <td>Poison Thorn<br><span class="jp">ポイズンソーン</span></td>
+          <td>118</td>
+          <td>125</td>
+          <td>7</td>
+          <td>-</td>
+          <td>720 Gald</td>
+          <td>-</td>
+          <td>Shop: Inferia City<br>Chance to inflict Poison</td>
+        </tr>
+
+        <tr>
+          <td>Iron Arms<br><span class="jp">アイアンアームズ</span></td>
+          <td>180</td>
+          <td>165</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>940 Gald</td>
+          <td>Chest: Forest of Temptation</td>
+        </tr>
+
+        <tr>
+          <td>Needle Glove<br><span class="jp">ニードルグローブ</span></td>
+          <td>210</td>
+          <td>180</td>
+          <td>5</td>
+          <td>-</td>
+          <td>2400 Gald</td>
+          <td>1200 Gald</td>
+          <td>Shop: Barole<br>Chest: Sylph Cavern</td>
+        </tr>
+
+        <tr>
+          <td>Venom<br><span class="jp">ヴェノム</span></td>
+          <td>240</td>
+          <td>215</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>2000 Gald</td>
+          <td>Chest: Efreet Gorge<br>Chance to Stun</td>
+        </tr>
+
+        <tr>
+          <td>Silver Knuckles<br><span class="jp">シルバーナックル</span></td>
+          <td>275</td>
+          <td>255</td>
+          <td>10</td>
+          <td>-</td>
+          <td>7600 Gald</td>
+          <td>3800 Gald</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Bone Knuckles<br><span class="jp">ボーンナックル</span></td>
+          <td>300</td>
+          <td>295</td>
+          <td>2</td>
+          <td>Darkness</td>
+          <td>-</td>
+          <td>4400 Gald</td>
+          <td>Drop: Heavy Snake<br>Luck -6, chance to reduce target’s Luck</td>
+        </tr>
+
+        <tr>
+          <td>Bear Claw<br><span class="jp">ベアクロー</span></td>
+          <td>325</td>
+          <td>320</td>
+          <td>8</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4800 Gald</td>
+          <td>Chest: Mine of Gnome</td>
+        </tr>
+
+        <tr>
+          <td>Ghost Shell<br><span class="jp">ゴーストシェル</span></td>
+          <td>365</td>
+          <td>360</td>
           <td>0</td>
-          <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
+          <td>Darkness</td>
+          <td>-</td>
+          <td>5200 Gald</td>
+          <td>
+            Chest: Chat's Hut<br>
+            Luck -10<br>
+            Darkness Resist +30%<br>
+            Chance for Instant Death
+          </td>
+        </tr>
+
+        <tr>
+          <td>Crystal Shell<br><span class="jp">クリスタルシェル</span></td>
+          <td>400</td>
+          <td>420</td>
+          <td>5</td>
+          <td>-</td>
+          <td>12000 Gald</td>
+          <td>6000 Gald</td>
+          <td>Shop: Peruti</td>
+        </tr>
+
+        <tr>
+          <td>Dragon Fang<br><span class="jp">ドラゴンファング</span></td>
+          <td>470</td>
+          <td>440</td>
+          <td>10</td>
+          <td>-</td>
+          <td>18800 Gald</td>
+          <td>9400 Gald</td>
+          <td>Shop: Tinnsia</td>
+        </tr>
+
+        <tr>
+          <td>Mythril Arms<br><span class="jp">ミスリルアームズ</span></td>
+          <td>515</td>
+          <td>530</td>
+          <td>5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>20000 Gald</td>
+          <td>Chest: Balir Castle</td>
+        </tr>
+
+        <tr>
+          <td>Flare Arms<br><span class="jp">フレアアームズ</span></td>
+          <td>580</td>
+          <td>620</td>
+          <td>7</td>
+          <td>Fire</td>
+          <td>-</td>
+          <td>33000 Gald</td>
+          <td>Chest: Shadow Cave<br>Chance to cast Fireball</td>
+        </tr>
+
+        <tr>
+          <td>Diamond Fist<br>
+            <span class="jp">ダイヤナックル (Diamond Knuckle)</span>
+          </td>
+          <td>660</td>
+          <td>635</td>
+          <td>7</td>
+          <td>-</td>
+          <td>-</td>
+          <td>70000 Gald</td>
+          <td>Chest: Regulus Knoll</td>
+        </tr>
+
+        <tr>
+          <td>Kaiser Fist<br>
+            <span class="jp">カイザーナックル (Kaiser Knuckle)</span>
+          </td>
+          <td>760</td>
+          <td>725</td>
+          <td>10</td>
+          <td>-</td>
+          <td>-</td>
+          <td>72000 Gald</td>
+          <td>Drop: Lakamar</td>
+        </tr>
+
+        <tr>
+          <td>Omni Weapon<br>
+            <span class="jp">ゴッドウェポン (God Weapon / Demon's Bane)</span>
+          </td>
+          <td>800</td>
+          <td>805</td>
+          <td>7</td>
+          <td>Light</td>
+          <td>-</td>
+          <td>88000 Gald</td>
+          <td>
+            Drop: Maxwell<br>
+            Luck +10<br>
+            4% HP recovery on hit
+          </td>
         </tr>
       </tbody>
     </table>
@@ -372,64 +1069,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-

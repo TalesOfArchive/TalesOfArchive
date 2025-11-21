@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Reid</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Reid</title>
 
   <style>
     :root {
@@ -223,6 +223,13 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
@@ -245,11 +252,11 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Reid
+    <a href="../../index.html">Tales of Eternia</a> &bull; Reid Hershel
   </div>
 </header>
 
@@ -260,23 +267,11 @@
     </div>
 
     <div>
-      <h1>Reid</h1>
-
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
+      <h1>Reid Hershel</h1>
 
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,39 +285,497 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
-          <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+        <!-- Martial Artes -->
+        <tr class="section-row">
+          <td colspan="7">Special Skills (特技 - Tokugi - "Base Artes")</td>
         </tr>
+
+        <tr>
+          <td>Sonic Blade</td>
+          <td>魔神剣 (Majinken)</td>
+          <td>Physical</td>
+          <td>1</td>
+          <td>4</td>
+          <td>Slash Lv 2, Thrust Lv 1<br>Combo: ↓ ↘ → + Attack</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Lightning Blade</td>
+          <td>雷神剣 (Raijinken)</td>
+          <td>Lightning</td>
+          <td>2</td>
+          <td>4</td>
+          <td>Slash Lv 1, Thrust Lv 2<br>Combo: ↓ ↘ → + Skill</td>
+          <td>First hit must stagger to continue</td>
+        </tr>
+
+        <tr>
+          <td>Demon Hammer</td>
+          <td>虎牙破斬 (Kogahazan)</td>
+          <td>None</td>
+          <td>2</td>
+          <td>6</td>
+          <td>Slash Lv 5, Thrust Lv 2<br>Combo: → ↓ ↘ + Attack</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Swarm (Sword Rain)</td>
+          <td>散沙雨 (Chirisazame)</td>
+          <td>None</td>
+          <td>5</td>
+          <td>7</td>
+          <td>Slash Lv 2, Thrust Lv 5<br>Combo: → ↓ ↘ + Skill</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Twin Sonic Blade</td>
+          <td>魔神剣・双牙 (Majinken Souga)</td>
+          <td>Physical</td>
+          <td>4</td>
+          <td>8</td>
+          <td>Sonic Blade used 48+ times</td>
+          <td>Hold ←/→ to drift first projectile; hold ↓ to drift second</td>
+        </tr>
+
+        <tr>
+          <td>Super Lightning Blade</td>
+          <td>風雷神剣 (Fuuraijinken)</td>
+          <td>Wind / Lightning</td>
+          <td>4</td>
+          <td>8</td>
+          <td>Lightning Blade used 50+ times</td>
+          <td>Must stagger with first or second hit</td>
+        </tr>
+
+        <tr>
+          <td>Demon Twist</td>
+          <td>虎牙連斬 (Kogarenzan)</td>
+          <td>None</td>
+          <td>4</td>
+          <td>10</td>
+          <td>Demon Hammer used 150+ times</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Neo Swarm (Sword Rain: Alpha)</td>
+          <td>秋沙雨 (Akisazame)</td>
+          <td>None</td>
+          <td>11</td>
+          <td>12</td>
+          <td>Swarm used 130+ times</td>
+          <td>Final thrust cancelable into Sacred Skills</td>
+        </tr>
+
+        <tr>
+          <td>Tempest Strike</td>
+          <td>裂空斬 (Rekkuuzan)</td>
+          <td>None</td>
+          <td>5</td>
+          <td>9</td>
+          <td>Slash Lv 16, Thrust Lv 8<br>Combo: ↓ ↑ + Attack</td>
+          <td>Aerial-enabled after 100 uses</td>
+        </tr>
+
+        <tr>
+          <td>Spiral Attack (Light Spear)</td>
+          <td>閃空裂破 (Senkuureppa)</td>
+          <td>Light</td>
+          <td>6</td>
+          <td>10</td>
+          <td>Slash Lv 9, Thrust Lv 16<br>Combo: ↓ ↑ + Skill</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Omega Tempest Strike</td>
+          <td>真空裂斬 (Shinkuuretsuzan)</td>
+          <td>Wind</td>
+          <td>7</td>
+          <td>14</td>
+          <td>Tempest Strike used 250+ times<br>Combo: ↓ ↑ + Attack + Skill</td>
+          <td>Aerial-enabled after 100 uses</td>
+        </tr>
+
+        <tr>
+          <td>Double Spiral Attack</td>
+          <td>閃空翔裂破 (Senkuu Shoureppa)</td>
+          <td>Light</td>
+          <td>4–8</td>
+          <td>14</td>
+          <td>Spiral Attack used 250+ times<br>Combo: ↓ ↑ + Skill + Defend</td>
+          <td>Hit count scales with use</td>
+        </tr>
+
+        <!-- Charged Artes -->
+        <tr class="section-row">
+          <td colspan="7">Charged Artes (チャージ技 - Charge Waza)</td>
+        </tr>
+
+        <tr>
+          <td>Demon Lightning Hammer<br><span class="aka">(Thunder Tiger Blade)</span></td>
+          <td>雷神双破斬 (Raijin Souhazan)</td>
+          <td>Lightning</td>
+          <td>4</td>
+          <td>10</td>
+          <td>
+            Slash Lv 7, Thrust Lv 5<br>
+            Lightning Blade used 16+ times<br>
+            Demon Hammer used 16+ times<br>
+            Combo: ← ↙ ↓ ↘ → + Attack
+          </td>
+          <td>The third hit must stagger to continue the attack</td>
+        </tr>
+
+        <tr>
+          <td>Neosonic Swarm<br><span class="aka">(Demonic Sword Rain)</span></td>
+          <td>魔神千烈破 (Majin Senretsuha)</td>
+          <td>Physical</td>
+          <td>6</td>
+          <td>10</td>
+          <td>
+            Slash Lv 5, Thrust Lv 7<br>
+            Sonic Blade used 24+ times<br>
+            Swarm used 24+ times<br>
+            Combo: ← ↙ ↓ ↘ → + Skill
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Sonic Chaos<br><span class="aka">(Demonic Chaos)</span></td>
+          <td>魔神連牙斬 (Majin Rengazan)</td>
+          <td>Physical</td>
+          <td>5</td>
+          <td>15</td>
+          <td>
+            Slash Lv 13, Thrust Lv 1<br>
+            Sonic Blade used 60+ times<br>
+            Twin Sonic Blade used 50+ times<br>
+            Combo: → ← → + Attack
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Megasonic Thrust<br><span class="aka">(Mega Sonic Thrust)</span></td>
+          <td>空破絶掌撃 (Kuuha Zesshougeki)</td>
+          <td>Physical</td>
+          <td>2</td>
+          <td>15</td>
+          <td>
+            Slash Lv 1, Thrust Lv 14<br>
+            Lightning Blade used 70+ times<br>
+            Swarm used 70+ times<br>
+            Combo: → ← → + Skill
+          </td>
+          <td>If the shock waves hit instead of the weapon thrusts, damage is modified</td>
+        </tr>
+
+        <tr>
+          <td>Demon Spiral Hammer</td>
+          <td>閃空双破斬 (Senkuu Souhazan)</td>
+          <td>Light</td>
+          <td>8</td>
+          <td>20</td>
+          <td>
+            Slash Lv 19, Thrust Lv 14<br>
+            Demon Hammer used 120+ times<br>
+            Spiral Attack used 80+ times<br>
+            Combo: ↓ ↓ ↓ + Attack
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Neo Tempest Swarm<br><span class="aka">(Tempest Rain: Alpha)</span></td>
+          <td>翔雨裂空撃 (Shou'u Rekkuugeki)</td>
+          <td>None</td>
+          <td>19</td>
+          <td>24</td>
+          <td>
+            Slash Lv 14, Thrust Lv 19<br>
+            Neo Swarm used 120+ times<br>
+            Tempest Strike used 80+ times<br>
+            Combo: ↓ ↓ ↓ + Skill
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Omega Demon Chaos<br><span class="aka">(Rending Tiger)</span></td>
+          <td>猛虎連撃破 (Mouko Rengekiha)</td>
+          <td>None</td>
+          <td>8</td>
+          <td>40</td>
+          <td>
+            Slash Lv 24, Thrust Lv 20<br>
+            Demon Hammer used 250+ times<br>
+            Demon Twist used 200+ times<br>
+            Combo: ↓ ↙ ← ↙ ↓ ↘ → + Attack
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Rising Phoenix</td>
+          <td>鳳凰天駆 (Hououtenku)</td>
+          <td>Fire</td>
+          <td>9</td>
+          <td>40</td>
+          <td>
+            Slash Lv 22, Thrust Lv 24<br>
+            Super Lightning Blade used 200+ times<br>
+            Megasonic Thrust used 150+ times<br>
+            Combo: ↓ ↙ ← ↙ ↓ ↘ → + Skill
+          </td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+          <td>Omega Seal<br><span class="aka">(Cyclone Seal)</span></td>
+          <td>風刃縛封 (Fuujinbakufuu)</td>
+          <td>Wind</td>
+          <td>2</td>
+          <td>40</td>
+          <td>
+            Slash Lv 30, Thrust Lv 30<br>
+            Combo: ↓ ↙ ← ↙ ↓ ↘ → + Defend
+          </td>
+          <td>Ineffective against heavy or flying enemies</td>
+        </tr>
+
+        <!-- Team Skills -->
+        <tr class="section-row">
+          <td colspan="7">Team Skills (協力技 - Kyouryokuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Flaming Sword<br>紅蓮剣<br>Gurenken (Hell Pyre)</td>
+          <td>Fire</td>
+          <td>4</td>
+          <td>6</td>
+          <td>Reid Hershel<br>Keele Zeibel</td>
+          <td>
+            Demon Hammer (Kogahazan)<br>
+            Fireball (Fire Ball)
+          </td>
+          <td>Craymel Arte must finish casting at the same time as the strike arte.</td>
+        </tr>
+
+        <tr>
+          <td>Earth Divide<br>断空剣<br>Dankuuken (Severing Wind)</td>
+          <td>Wind / Light</td>
+          <td>9 + ?</td>
+          <td>10</td>
+          <td>Reid Hershel<br>Keele Zeibel<br>Meredy</td>
+          <td>
+            Spiral Attack (Senkuureppa / Light Spear)<br>
+            Cyclone
+          </td>
+          <td>Craymel Arte must finish casting at the same time as the strike arte.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Mystic Artes -->
+    <h2>Divine Skills (秘奥義 - Hi Ougi - "Mystic Artes")</h2>
+    <table id="tbl-mystic-artes">
+      <thead>
+        <tr>
+          <th>Arte Name</th>
+          <th>Element</th>
+          <th>Max Hits</th>
+          <th>TP Cost</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Dragon Demon Chaos<br>
+            龍虎滅牙斬<br>
+            Ryuuko Metsugazan (Wyrm Wrath)
+          </td>
+          <td>Physical / Elemental</td>
+          <td>19</td>
+          <td>10</td>
+          <td>
+            • Use Omega Demon Chaos ≥ <code>160 − (Actions × 30)</code> times<br>
+            • Enemy HP ≤ <code>2000 + Uses</code><br>
+            • Extend from Omega Demon Chaos by pressing Skill during final slash before landing
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Burning Phoenix<br>
+            緋凰絶炎衝<br>
+            Hiou Zetsuenshou
+          </td>
+          <td>Fire</td>
+          <td>2</td>
+          <td>50</td>
+          <td>
+            • Rising Phoenix ≥ <code>300 − (Actions × 50)</code> uses<br>
+            • Extend from Rising Phoenix by pressing Skill upon landing after causing stagger
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Quasi Seal<br>
+            風塵封縛殺<br>
+            Fuujin Fuubakusatsu
+          </td>
+          <td>Wind / Physical</td>
+          <td>13</td>
+          <td>24</td>
+          <td>
+            • Omega Seal used 50+ times<br>
+            • Only 1 enemy remains, HP ≤ 20,000<br>
+            • Enemy must have &lt; 30% Wind Resistance<br>
+            • Extend from Omega Seal by pressing Skill during final slash
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Aurora Wall<br>
+            極光壁<br>
+            Kyokkouheki
+          </td>
+          <td>-</td>
+          <td>19</td>
+          <td>50</td>
+          <td>
+            • Complete Seyfert's First Trial<br>
+            • HP &lt; 15% (marker flashing)<br>
+            • Activate with Attack + Skill + Defend simultaneously
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Aurora Sword<br>
+            極光剣<br>
+            Kyokkouken
+          </td>
+          <td>Elemental</td>
+          <td>8</td>
+          <td>100</td>
+          <td>
+            • Complete Seyfert's Second Trial<br>
+            • Extend from Aurora Wall by pressing Attack before final jump<br>
+            • Called "Aurora Slash" in battle
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Aurora Wave<br>
+            極光波<br>
+            Kyokkouha
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>50</td>
+          <td>
+            • Complete Seyfert's Third Trial<br>
+            • Hold Attack + Skill + Defend when Dark Aurora triggers
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Eternal Infinity<br>
+            エターナル・インフィニティ
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>50</td>
+          <td>
+            • Activate Aurora Wave against Eternal Finality<br>
+            • Revives & fully heals all allies
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Infinity Reviver<br>
+            インフィニティ・リヴァイヴァー
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>50</td>
+          <td>
+            • Activate Aurora Wave against Finality DeadEnd<br>
+            • Revives & fully heals all allies<br>
+            • Immediately ends the battle
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hunter</td><td>りょうし</td><td>Ryoushi</td><td>Default title</td></tr>
+        <tr><td>Squire</td><td>けんし</td><td>Kenshi</td><td>Reach level 10</td></tr>
+        <tr><td>Master Swordsman</td><td>けんごう</td><td>Kengou</td><td>Reach level 30</td></tr>
+        <tr><td>Knight</td><td>ようじんぼう</td><td>Youjinbou (“Bodyguard”)</td><td>Reach level 60</td></tr>
+        <tr><td>Legendary Knight</td><td>でんせつのきし</td><td>Densetsu no Kishi</td><td>Reach level 99</td></tr>
+        <tr><td>Supreme Patriot</td><td>こくしむそう</td><td>Kokushi Musou</td><td>Learn all skills</td></tr>
+        <tr><td>Aurora Master</td><td>きょっこうじゅつし</td><td>Kyokkoujutsushi (“Aurora Artes User”)</td><td>Learn all three Aurora Artes</td></tr>
+        <tr><td>Gourmet Master</td><td>グルメマスター</td><td>Gourmet Master</td><td>Master all dishes</td></tr>
+        <tr><td>Explorer</td><td>エクスプローラー</td><td>Explorer</td><td>Find all seven treasures of Celestia</td></tr>
+        <tr><td>Lens Hunter</td><td>レンズハンター</td><td>Lens Hunter</td><td>Find all 60 Lens; talk to Irene</td></tr>
+        <tr><td>Namco Teacher</td><td>テイルズせんせい</td><td>Tales Sensei</td><td>Pass all 30 beginner questions at Mintche</td></tr>
+        <tr><td>Namco Professor</td><td>テイルズはかせ</td><td>Tales Hakase</td><td>Pass all 30 intermediate questions at Mintche</td></tr>
+        <tr><td>Namco Otaku</td><td>テイルズおたく</td><td>Tales Otaku</td><td>Pass all 30 advanced questions at Mintche</td></tr>
+        <tr><td>Gladiator</td><td>しんのしゅやく</td><td>Shin no Shuyaku (“True Leading Role”)</td><td>Defeat Cress Albain</td></tr>
+        <tr><td>Fastest Man</td><td>さいそくのおとこ</td><td>Saisoku no Otoko</td><td>Reach Shizel Castle intro in &lt; 20 hours</td></tr>
+        <tr><td>Sonic Warrior</td><td>おんそくのせんし</td><td>Onsoku no Senshi (“Sonic Fighter”)</td><td>Win a battle within 1 second</td></tr>
+        <tr><td>Speedster</td><td>スピードスター</td><td>Speedster</td><td>Shizel Castle intro w/ avg battle time ≤ 15 sec</td></tr>
+        <tr><td>Alvein no Kenshi</td><td>アルベインのけんし</td><td>“Alvein Swordsman”</td><td>Win Etapoke 1</td></tr>
+        <tr><td>Master Coxswain</td><td>かじとりめいじん</td><td>Kajitori Meijin</td><td>River rafting time under 1'06"</td></tr>
+        <tr><td>Master Roller</td><td>ころがしめいじん</td><td>Korogashi Meijin</td><td>Win Craymel Ball (Disc 2 or 3)</td></tr>
+        <tr><td>Trolley Bomber</td><td>トロッコボンバー</td><td>Torokko Bomber</td><td>20,000+ points in Craymel Express</td></tr>
+        <tr><td>King of Balloons</td><td>キングあんどバルーン</td><td>King and Balloon</td><td>Complete all Chamballoon rounds</td></tr>
+        <tr><td>WHIS Master</td><td>ウィスマスター</td><td>WHIS Master</td><td>Score 1000+ in WHIS with Reid</td></tr>
+        <tr><td>Hustler</td><td>ホモルーデンス</td><td>Homo Ludens</td><td>Win a WHIS game at Jini</td></tr>
+        <tr><td>King of Hunger</td><td>はやぐいおう</td><td>Hayagui-ou</td><td>Win Carousel Sushi</td></tr>
+        <tr><td>Kaiser</td><td>カイザー</td><td>Kaiser</td><td>10,000+ in Van Eltia arcade sim</td></tr>
+        <tr><td>Millionaire</td><td>おくまんちょうじゃ</td><td>Okumanchouja</td><td>Obtain 10,000,000+ Gald</td></tr>
+        <tr><td>Berserker</td><td>ベルセルク</td><td>Berserk</td><td>Win 256+ battles on Hard/Hardcore</td></tr>
+        <tr><td>Combo Master</td><td>コンボマスター</td><td>Combo Master</td><td>Perform a 100+ hit combo</td></tr>
+        <tr><td>Survivor</td><td>しにぞこない</td><td>Shinizokonai</td><td>Retry after losing 100+ times</td></tr>
+        <tr><td>Pro Roller</td><td>プロボウラー</td><td>Pro Bowler</td><td>Win Craymel Ball (Disc 1)</td></tr>
+        <tr><td>Star Dancer</td><td>ダンシンスター</td><td>Dancing Star</td><td>Score 8.00+ in 2-player dancing</td></tr>
+        <tr><td>Mathematician</td><td>さんじゅつせいねん</td><td>Sanjutsu Seinen</td><td>Win 3-rock pile mini-game</td></tr>
+        <tr><td>Nouveau Rich</td><td>アイテムなりきん</td><td>Item Narikin</td><td>Obtain 100,000+ Jini at auction</td></tr>
       </tbody>
     </table>
   </section>
@@ -333,21 +786,709 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Slash</th>
+          <th>Thrust</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
+          <th>Cost</th>
+          <th>Sell</th>
           <th>Acquisition</th>
         </tr>
       </thead>
       <tbody>
+        <tr class="section-row">
+          <td colspan="8">Swords</td>
+        </tr>
+
         <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
+          <td>Long Sword</td>
+          <td>ロングソード</td>
+          <td>70</td>
+          <td>70</td>
           <td>0</td>
+          <td>-</td>
+          <td>300</td>
+          <td>Shop: Rasheans</td>
+        </tr>
+
+        <tr>
+          <td>Rapier</td>
+          <td>レイピア</td>
+          <td>80</td>
+          <td>140</td>
+          <td>10</td>
+          <td>-</td>
+          <td>400</td>
+          <td>Chest: Nostos Cave</td>
+        </tr>
+
+        <tr>
+          <td>Saber</td>
+          <td>サーベル</td>
+          <td>105</td>
+          <td>85</td>
+          <td>5</td>
+          <td>-</td>
+          <td>260</td>
+          <td>Chest: Mt. Mintche</td>
+        </tr>
+
+        <tr>
+          <td>Knight Saber</td>
+          <td>ナイツサーベル</td>
+          <td>150</td>
+          <td>130</td>
           <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
+          <td>-</td>
+          <td>800</td>
+          <td>Shop: Barole</td>
+        </tr>
+
+        <tr>
+          <td>Bastard Sword</td>
+          <td>バスタードソード</td>
+          <td>180</td>
+          <td>175</td>
+          <td>0</td>
+          <td>-</td>
+          <td>1000</td>
+          <td>Chest: Forest of Temptation / Drop: Skeleton</td>
+        </tr>
+
+        <tr>
+          <td>Nimble Rapier</td>
+          <td>ニンブルレイピア</td>
+          <td>200</td>
+          <td>320</td>
+          <td>10</td>
+          <td>-</td>
+          <td>180</td>
+          <td>Drop: Bone Knight</td>
+        </tr>
+
+        <tr>
+          <td>Shamsel (Shamshir)</td>
+          <td>シャムシール</td>
+          <td>260</td>
+          <td>200</td>
+          <td>0</td>
+          <td>-</td>
+          <td>1500</td>
+          <td>Chest: Barole</td>
+        </tr>
+
+        <tr>
+          <td>Dao Blade</td>
+          <td>ダオ・ブレード</td>
+          <td>295</td>
+          <td>285</td>
+          <td>0</td>
+          <td>-</td>
+          <td>2200</td>
+          <td>Shop: Chambard</td>
+        </tr>
+
+        <tr>
+          <td>Flamberge</td>
+          <td>フランベルジュ</td>
+          <td>320</td>
+          <td>320</td>
+          <td>0</td>
+          <td>Fire</td>
+          <td>3000</td>
+          <td>Drop: Firebird</td>
+        </tr>
+
+        <tr>
+          <td>Saw Saber</td>
+          <td>ソー・サーベル</td>
+          <td>355</td>
+          <td>350</td>
+          <td>5</td>
+          <td>-</td>
+          <td>4000</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Earth Blade</td>
+          <td>アースブレード</td>
+          <td>410</td>
+          <td>405</td>
+          <td>0</td>
+          <td>Earth</td>
+          <td>5000</td>
+          <td>Drop: Hard Horn</td>
+        </tr>
+
+        <tr>
+          <td>Destroyer</td>
+          <td>デストロイヤー</td>
+          <td>440</td>
+          <td>440</td>
+          <td>0</td>
+          <td>-</td>
+          <td>6000</td>
+          <td>Shop: Peruti (increased critical rate)</td>
+        </tr>
+
+        <tr>
+          <td>Ice Coffin</td>
+          <td>アイスコフィン</td>
+          <td>475</td>
+          <td>460</td>
+          <td>15</td>
+          <td>Ice</td>
+          <td>8000</td>
+          <td>Drop: Ice Warrior</td>
+        </tr>
+
+        <tr>
+          <td>Ogre Sword</td>
+          <td>おにぼうちょう</td>
+          <td>500</td>
+          <td>470</td>
+          <td>0</td>
+          <td>-</td>
+          <td>10000</td>
+          <td>Shop: Tinnsia</td>
+        </tr>
+
+        <tr>
+          <td>Voltic Sword</td>
+          <td>ボルテックソード</td>
+          <td>550</td>
+          <td>565</td>
+          <td>10</td>
+          <td>Lightning</td>
+          <td>20000</td>
+          <td>Chest: Ruins of Volt</td>
+        </tr>
+
+        <tr>
+          <td>Flame Sword</td>
+          <td>フレイムソード</td>
+          <td>610</td>
+          <td>605</td>
+          <td>5</td>
+          <td>Fire</td>
+          <td>30000</td>
+          <td>Chest: Aifread's Cavern (casts Fireball on hit)</td>
+        </tr>
+
+        <tr>
+          <td>Excalibur</td>
+          <td>エクスカリバー</td>
+          <td>615</td>
+          <td>590</td>
+          <td>0</td>
+          <td>Light</td>
+          <td>80000</td>
+          <td>Event: Summoning of Shadow (Luck +5, HP regen chance, Ishtar effect)</td>
+        </tr>
+
+        <tr>
+          <td>Vorpal Sword</td>
+          <td>ヴォーパルソード</td>
+          <td>735</td>
+          <td>710</td>
+          <td>0</td>
+          <td>Water</td>
+          <td>60000</td>
+          <td>Chest: Sunken Ship</td>
+        </tr>
+
+        <tr>
+          <td>Ninja Sword (Chizakura)</td>
+          <td>にんとうちざくら</td>
+          <td>740</td>
+          <td>720</td>
+          <td>10</td>
+          <td>-</td>
+          <td>64000</td>
+          <td>GPS: Inferia (Underwater 142,2)</td>
+        </tr>
+
+        <tr>
+          <td>Last Fencer</td>
+          <td>ラストフェンサー</td>
+          <td>765</td>
+          <td>758</td>
+          <td>10</td>
+          <td>-</td>
+          <td>100000</td>
+          <td>Event: Sagura in Imen (INT +2, EVA +3, LUCK +6, HP regen)</td>
+        </tr>
+
+        <tr>
+          <td>Eternal Sword</td>
+          <td>エターナルソード</td>
+          <td>890</td>
+          <td>850</td>
+          <td>0</td>
+          <td>Time</td>
+          <td>100000</td>
+          <td>Drop: Cress Albain (inflicts casting delay)</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Lances</td>
+        </tr>
+
+        <tr>
+          <td>Short Spear</td>
+          <td>ショートスピア</td>
+          <td>50</td>
+          <td>85</td>
+          <td>0</td>
+          <td>-</td>
+          <td>150</td>
+          <td>Shop: Regulus Dojo</td>
+        </tr>
+
+        <tr>
+          <td>Long Spear</td>
+          <td>ロングスピア</td>
+          <td>66</td>
+          <td>130</td>
+          <td>0</td>
+          <td>-</td>
+          <td>250</td>
+          <td>Shop: Mintche</td>
+        </tr>
+
+        <tr>
+          <td>Ranseur (Corsesca)</td>
+          <td>コルセスカ</td>
+          <td>80</td>
+          <td>230</td>
+          <td>0</td>
+          <td>-</td>
+          <td>750</td>
+          <td>Drop: Marcroid</td>
+        </tr>
+
+        <tr>
+          <td>Short Lance</td>
+          <td>ショートランス</td>
+          <td>100</td>
+          <td>220</td>
+          <td>5</td>
+          <td>-</td>
+          <td>960</td>
+          <td>Shop: Inferia City</td>
+        </tr>
+
+        <tr>
+          <td>Partisan</td>
+          <td>パルチザン</td>
+          <td>155</td>
+          <td>260</td>
+          <td>10</td>
+          <td>-</td>
+          <td>1480</td>
+          <td>Shop: Barole</td>
+        </tr>
+
+        <tr>
+          <td>Arc Wind</td>
+          <td>アークウィンド</td>
+          <td>170</td>
+          <td>320</td>
+          <td>5</td>
+          <td>Wind</td>
+          <td>1600</td>
+          <td>Chest: Sylph Cavern (Accuracy down on hit)</td>
+        </tr>
+
+        <tr>
+          <td>Trident</td>
+          <td>トライデント</td>
+          <td>240</td>
+          <td>400</td>
+          <td>0</td>
+          <td>Water</td>
+          <td>3200</td>
+          <td>Shop: Peruti / Chest: Mt. Farlos</td>
+        </tr>
+
+        <tr>
+          <td>Ogre Lance</td>
+          <td>オーガランス</td>
+          <td>300</td>
+          <td>450</td>
+          <td>5</td>
+          <td>Earth</td>
+          <td>4800</td>
+          <td>Chest: Mine of Gnome</td>
+        </tr>
+
+        <tr>
+          <td>Demon Javelin</td>
+          <td>デモンジャベリン</td>
+          <td>320</td>
+          <td>520</td>
+          <td>5</td>
+          <td>Dark</td>
+          <td>12000</td>
+          <td>Shop: Peruti</td>
+        </tr>
+
+        <tr>
+          <td>Dragger Lance (Dragoner Lance)</td>
+          <td>ドラグナーランス</td>
+          <td>400</td>
+          <td>680</td>
+          <td>0</td>
+          <td>-</td>
+          <td>21000</td>
+          <td>Chest: Balir Castle</td>
+        </tr>
+
+        <tr>
+          <td>Flame Spear</td>
+          <td>フレイムスピア</td>
+          <td>500</td>
+          <td>780</td>
+          <td>0</td>
+          <td>Fire</td>
+          <td>32000</td>
+          <td>Chest: Regulus Knoll (casts Fireball on hit)</td>
+        </tr>
+
+        <tr>
+          <td>Gungnir</td>
+          <td>グーングニル</td>
+          <td>600</td>
+          <td>999</td>
+          <td>5</td>
+          <td>-</td>
+          <td>90000</td>
+          <td>Event: Nereid’s Labyrinth, 1F (Defense down on hit)</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Axes</td>
+        </tr>
+
+        <tr>
+          <td>Hand Axe<br><span class="jp">ハンドアックス</span></td>
+          <td>75</td>
+          <td>60</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>160</td>
+          <td>Initial: Reid</td>
+        </tr>
+
+        <tr>
+          <td>Francesca<br><span class="jp">フランシスカ</span></td>
+          <td>110</td>
+          <td>70</td>
+          <td>0</td>
+          <td>-</td>
+          <td>400</td>
+          <td>200</td>
+          <td>Shop: Regulus Dojo</td>
+        </tr>
+
+        <tr>
+          <td>Battle Axe<br><span class="jp">バトルアクス</span></td>
+          <td>190</td>
+          <td>60</td>
+          <td>5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>700</td>
+          <td>Chest: Nostos Cave</td>
+        </tr>
+
+        <tr>
+          <td>Crescent Axe<br><span class="jp">クレセントアクス</span></td>
+          <td>300</td>
+          <td>140</td>
+          <td>0</td>
+          <td>-</td>
+          <td>2200</td>
+          <td>1100</td>
+          <td>Shop: Inferia City<br>Chance on hit: Knockback</td>
+        </tr>
+
+        <tr>
+          <td>Bardis (Bardiche)<br><span class="jp">バルディッシュ</span></td>
+          <td>410</td>
+          <td>300</td>
+          <td>0</td>
+          <td>-</td>
+          <td>8400</td>
+          <td>4200</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Battle Pick<br><span class="jp">バトルピック</span></td>
+          <td>480</td>
+          <td>200</td>
+          <td>0</td>
+          <td>-</td>
+          <td>12400</td>
+          <td>6200</td>
+          <td>Shop: Tinnsia<br>Chest: Mt. Celsius</td>
+        </tr>
+
+        <tr>
+          <td>Strike Axe<br><span class="jp">ストライクアクス</span></td>
+          <td>680</td>
+          <td>320</td>
+          <td>-5</td>
+          <td>Lightning</td>
+          <td>-</td>
+          <td>18000</td>
+          <td>Drop: Neuroids<br>Chance on hit: Stun</td>
+        </tr>
+
+        <tr>
+          <td>Gaia Cleaver<br><span class="jp">ガイアクリーヴァ</span></td>
+          <td>999</td>
+          <td>500</td>
+          <td>-5</td>
+          <td>Earth</td>
+          <td>-</td>
+          <td>84000</td>
+          <td>Event: Nereid's Labyrinth (5th Floor)<br>Chance on hit: Lower Defense</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Halberds</td>
+        </tr>
+
+        <tr>
+          <td>Pole Axe<br><span class="jp">ポールアクス</span></td>
+          <td>120</td>
+          <td>120</td>
+          <td>-15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>500</td>
+          <td>Chest: Mt. Mintche</td>
+        </tr>
+
+        <tr>
+          <td>Deck Brush<br><span class="jp">デッキブラシ</span></td>
+          <td>200</td>
+          <td>200</td>
+          <td>30</td>
+          <td>Wind</td>
+          <td>-</td>
+          <td>200</td>
+          <td>Event: Seven Treasures of Celestia</td>
+        </tr>
+
+        <tr>
+          <td>Heavy Grave (Heavy Glaive)<br><span class="jp">ヘビーグレイブ</span></td>
+          <td>220</td>
+          <td>220</td>
+          <td>-10</td>
+          <td>-</td>
+          <td>2000</td>
+          <td>1000</td>
+          <td>Shop: Inferia City</td>
+        </tr>
+
+        <tr>
+          <td>Halberd<br><span class="jp">ハルバード</span></td>
+          <td>300</td>
+          <td>300</td>
+          <td>-5</td>
+          <td>-</td>
+          <td>3800</td>
+          <td>1900</td>
+          <td>Shop: Chambard</td>
+        </tr>
+
+        <tr>
+          <td>War Hammer<br><span class="jp">ウォーハンマー</span></td>
+          <td>370</td>
+          <td>370</td>
+          <td>-10</td>
+          <td>-</td>
+          <td>9000</td>
+          <td>4500</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Merenol (Mjolnir)<br><span class="jp">ミョルニル</span></td>
+          <td>510</td>
+          <td>515</td>
+          <td>-10</td>
+          <td>Lightning</td>
+          <td>-</td>
+          <td>20000</td>
+          <td>Auction: 11000 Jini<br>Chance on hit: Cast Lightning</td>
+        </tr>
+
+        <tr>
+          <td>Saint Halberd<br><span class="jp">セントハルバード</span></td>
+          <td>630</td>
+          <td>630</td>
+          <td>-15</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30000</td>
+          <td>Chest: Shadow Cave<br>Luck +8<br>Chance on hit: Freeze</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Daggers</td>
+        </tr>
+
+        <tr>
+          <td>Short Sword<br><span class="jp">ショートソード</span></td>
+          <td>50</td>
+          <td>40</td>
+          <td>30</td>
+          <td>-</td>
+          <td>200</td>
+          <td>100</td>
+          <td>Shop: Regulus Dojo (Intelligence +5)</td>
+        </tr>
+
+        <tr>
+          <td>Hydra Dagger<br><span class="jp">チンクエデア<br>Cinquedea</span></td>
+          <td>160</td>
+          <td>170</td>
+          <td>30</td>
+          <td>Water</td>
+          <td>-</td>
+          <td>800</td>
+          <td>Chest: Undine Stream</td>
+        </tr>
+
+        <tr>
+          <td>Assault Dagger<br><span class="jp">アサルトダガー</span></td>
+          <td>250</td>
+          <td>260</td>
+          <td>30</td>
+          <td>Wind</td>
+          <td>-</td>
+          <td>1600</td>
+          <td>Chest: Sylph Cavern (Chance on hit to cast Wind Blade)</td>
+        </tr>
+
+        <tr>
+          <td>Gladius<br><span class="jp">グラディウス</span></td>
+          <td>320</td>
+          <td>310</td>
+          <td>20</td>
+          <td>-</td>
+          <td>8400</td>
+          <td>4200</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Gnome Pick<br><span class="jp">ノームピック</span></td>
+          <td>390</td>
+          <td>360</td>
+          <td>30</td>
+          <td>Earth</td>
+          <td>-</td>
+          <td>5000</td>
+          <td>Chest: Mine of Gnome (Chance on hit to cast Grave)</td>
+        </tr>
+
+        <tr>
+          <td>Katar<br><span class="jp">カタール</span></td>
+          <td>450</td>
+          <td>450</td>
+          <td>20</td>
+          <td>-</td>
+          <td>17600</td>
+          <td>8800</td>
+          <td>Shop: Tinnsia (Evade +5)</td>
+        </tr>
+
+        <tr>
+          <td>Crystal Dagger<br><span class="jp">クリスダガー<br>Kris Dagger (Keris Blades)</span></td>
+          <td>650</td>
+          <td>650</td>
+          <td>30</td>
+          <td>-</td>
+          <td>-</td>
+          <td>20000</td>
+          <td>Auction: 9800 Jini (Chance on hit to recover 1% TP)</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Long Swords</td>
+        </tr>
+
+        <tr>
+          <td>Steel Sword</td>
+          <td>-</td>
+          <td>330</td>
+          <td>240</td>
+          <td>-</td>
+          <td>2400 Gald</td>
+          <td>1200 Gald</td>
+          <td>Shop: Barole (Evade -2)</td>
+        </tr>
+
+        <tr>
+          <td>Great Sword</td>
+          <td>-</td>
+          <td>390</td>
+          <td>370</td>
+          <td>-</td>
+          <td>6600 Gald</td>
+          <td>3300 Gald</td>
+          <td>Shop: Luishka Station (Evade -3)</td>
+        </tr>
+
+        <tr>
+          <td>Soul Eater</td>
+          <td>Darkness</td>
+          <td>490</td>
+          <td>430</td>
+          <td>-</td>
+          <td>-</td>
+          <td>5600 Gald</td>
+          <td>Chest: Chat's Hut (Chance to inflict Instant Death)</td>
+        </tr>
+
+        <tr>
+          <td>Dragon Vein</td>
+          <td>Darkness</td>
+          <td>670</td>
+          <td>650</td>
+          <td>-</td>
+          <td>-</td>
+          <td>26000 Gald</td>
+          <td>Chest: Balir Castle</td>
+        </tr>
+
+        <tr>
+          <td>Hero Cane</td>
+          <td>-</td>
+          <td>790</td>
+          <td>740</td>
+          <td>-</td>
+          <td>-</td>
+          <td>33000 Gald</td>
+          <td>Auction: 13200 Jini (Luck +5)</td>
+        </tr>
+
+        <tr>
+          <td>Mystic Sword</td>
+          <td>Water</td>
+          <td>865</td>
+          <td>840</td>
+          <td>-</td>
+          <td>-</td>
+          <td>75000 Gald</td>
+          <td>Chest: Shizel's Castle (Defense +5, chance to inflict knockback)</td>
         </tr>
       </tbody>
     </table>
@@ -372,64 +1513,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-

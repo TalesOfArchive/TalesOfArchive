@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Keele</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Keele </title>
 
   <style>
     :root {
@@ -112,47 +112,6 @@
       font-weight: 800;
     }
 
-    /* Mechanics */
-    .mechanics-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    .mechanic {
-      background: #eef2ff;
-      padding: 0.5rem 0.6rem;
-      border-radius: 10px;
-    }
-
-    .mechanic-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .mechanic-tag {
-      background: #ffffff;
-      border: 1px solid #c4b5fd;
-      padding: 0.15rem 0.45rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #4f46e5;
-    }
-
-    .mechanic-name {
-      font-weight: 700;
-      color: #111827;
-    }
-
-    .mechanic-desc {
-      font-size: 0.85rem;
-      color: #475569;
-    }
-
     /* Tabs */
     .tabs {
       display: flex;
@@ -223,6 +182,13 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
@@ -245,38 +211,26 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Keele
+    <a href="../../index.html">Tales of Eternia</a> &bull; Keele Zeibel
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
     <div class="thumb">
-      <img src="../../../images/eternia/keele-status.jpg" alt="Keele status art">
+      <img src="../../../images/eternia/Keele-status.jpg" alt="Keele status art">
     </div>
 
     <div>
-      <h1>Keele</h1>
-
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
+      <h1>Keele Zeibel</h1>
 
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,38 +244,231 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Keele – Craymel Artes (character subset) -->
+        <tr class="section-row">
+          <td colspan="7">Craymel Artes (晶霊術 - Shoureijutsu)</td>
+        </tr>
+
         <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
-          <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+          <td>Aqua Edge</td>
+          <td>アクアエッジ</td>
+          <td>Water</td>
+          <td>2</td>
+          <td>4</td>
+          <td>Default Craymel Arte for Keele Zeibel</td>
+          <td>Basic water projectile</td>
+        </tr>
+
+        <tr>
+          <td>Wind Blade<br><span class="aka">("Wind Cutter")</span></td>
+          <td>ウィンドカッター</td>
+          <td>Wind</td>
+          <td>2</td>
+          <td>7</td>
+          <td>Default Craymel Arte for Keele Zeibel</td>
+          <td>Launches two wind slashes</td>
+        </tr>
+
+        <tr>
+          <td>Fireball<br><span class="aka">("Fire Ball")</span></td>
+          <td>ファイアボール</td>
+          <td>Fire</td>
+          <td>3</td>
+          <td>7</td>
+          <td>Default Craymel Arte for Keele Zeibel</td>
+          <td>Fires three fireballs at the enemy</td>
+        </tr>
+
+        <!-- Keele – Team Skills (協力技 - Kyouryokuwaza) -->
+        <tr class="section-row">
+          <td colspan="7">Team Skills (協力技 - Kyouryokuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Flaming Sword<br><span class="jp">紅蓮剣</span><br><span class="aka">Gurenken / "Hell Pyre"</span></td>
+          <td>紅蓮剣</td>
+          <td>Fire</td>
+          <td>4</td>
+          <td>6</td>
+          <td>
+            Keele Zeibel + Reid Hershel<br>
+            Strike Arte: Demon Hammer (虎牙破斬 / Kogahazan, "Tiger Blade")<br>
+            Craymel Arte: Fireball (ファイアボール / Fire Ball)<br>
+            Fireball must finish casting as the strike hits
+          </td>
+          <td>
+            Damage spread:<br>
+            Slash × 1.00 × 1<br>
+            Slash × 1.00 × 1<br>
+            INT × 1.10 × 1
+          </td>
+        </tr>
+
+        <tr>
+          <td>Earth Divide<br><span class="jp">断空剣</span><br><span class="aka">Dankuuken / "Severing Wind"</span></td>
+          <td>断空剣</td>
+          <td>Wind / Light</td>
+          <td>9 + ?</td>
+          <td>10</td>
+          <td>
+            Keele Zeibel + Reid Hershel<br>
+            Strike Arte: Spiral Attack (閃空裂破 / Senkuureppa, "Light Spear")<br>
+            Craymel Arte: Cyclone (サイクロン)<br>
+            Cyclone must finish casting as the strike hits
+          </td>
+          <td>
+            Damage spread:<br>
+            Slash × 0.50 × 6<br>
+            Slash × 2.00 × 3 × ?
+          </td>
+        </tr>
+
+        <tr>
+          <td>Serpent Knuckle<br><span class="jp">海龍拳</span><br><span class="aka">Kairyuuken</span></td>
+          <td>海龍拳</td>
+          <td>Lightning / Water</td>
+          <td>10</td>
+          <td>12</td>
+          <td>
+            Keele Zeibel + Farah Oersted<br>
+            Strike Arte: Rising Dragon Strike (臥龍空破 / Garyoukuuha, "Dragon Shot")<br>
+            Craymel Arte: Heal (ヒール)<br>
+            Heal must finish casting as the strike hits
+          </td>
+          <td>
+            Damage spread:<br>
+            Punch × 1.00 × 2<br>
+            Punch × 0.80 × 8<br>
+            Heal restores 50% of Farah's max HP
+          </td>
+        </tr>
+
+        <tr>
+          <td>Lightning Strike<br><span class="jp">雷閃拳</span><br><span class="aka">Raisenken</span></td>
+          <td>雷閃拳</td>
+          <td>Lightning</td>
+          <td>7</td>
+          <td>12</td>
+          <td>
+            Keele Zeibel + Farah Oersted<br>
+            Strike Arte: Twin Palm Strike (双撞掌底破 / Soudou Shouteiha, "Reaper's Toll")<br>
+            Craymel Arte: Thunder Blade (サンダーブレード)<br>
+            Thunder Blade must finish casting as the strike hits
+          </td>
+          <td>
+            Damage spread:<br>
+            INT × 1.00 × 7
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Student</td>
+          <td>がくし</td>
+          <td>Gakushi</td>
+          <td>Default title</td>
+        </tr>
+
+        <tr>
+          <td>Graduate Student</td>
+          <td>いんせい</td>
+          <td>Insei</td>
+          <td>Reach level 10</td>
+        </tr>
+
+        <tr>
+          <td>Ph.D Student</td>
+          <td>しゅうし</td>
+          <td>Shuushi</td>
+          <td>Reach level 30</td>
+        </tr>
+
+        <tr>
+          <td>Professor</td>
+          <td>きょうじゅ</td>
+          <td>Kyouju</td>
+          <td>Reach level 60</td>
+        </tr>
+
+        <tr>
+          <td>Chancellor</td>
+          <td>がくちょう</td>
+          <td>Gakuchou</td>
+          <td>Reach level 99</td>
+        </tr>
+
+        <tr>
+          <td>Craymel Master</td>
+          <td>クレーメルマスター</td>
+          <td>Craymel Master</td>
+          <td>Obtain all ten Greater Craymels</td>
+        </tr>
+
+        <tr>
+          <td>Grand Chef</td>
+          <td>グランドシェフ</td>
+          <td>Grand Chef</td>
+          <td>Master all dishes</td>
+        </tr>
+
+        <tr>
+          <td>Curator</td>
+          <td>キュレーター</td>
+          <td>Curator</td>
+          <td>Complete the Collector's Book</td>
+        </tr>
+
+        <tr>
+          <td>King of Monsters</td>
+          <td>エタモンマスター</td>
+          <td>Etamon Master</td>
+          <td>
+            See all monsters in the Monster Collection<br>
+            (does not require data on all of them)
+          </td>
+        </tr>
+
+        <tr>
+          <td>Sleepy Head</td>
+          <td>ボサボサあたま</td>
+          <td>Bosa Bosa Atama</td>
+          <td>
+            After Keele's all-nighter at Imen's lab, talk to Bonz in Imen<br>
+            with Keele as the onscreen character
+          </td>
+        </tr>
+
+        <tr>
+          <td>Dr. Mintche</td>
+          <td>ドクターミンツ</td>
+          <td>Dr. Mintche</td>
+          <td>
+            Go to the Light Craymel Laboratory in Mintche (Disc 2 or 3)<br>
+            Won from Etapoke 3 in JP version, but obtainable anyway in others
+          </td>
         </tr>
       </tbody>
     </table>
@@ -332,22 +479,114 @@
     <table id="tbl-weapons">
       <thead>
         <tr>
-          <th>Name</th>
+          <th>Weapon Name</th>
+          <th>Attack</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
-          <th>Acquisition</th>
+          <th>Purchase Price (Gald)</th>
+          <th>Resale Price (Gald)</th>
+          <th>Acquisition Method / Notes</th>
         </tr>
       </thead>
       <tbody>
+        <tr class="section-row">
+          <td colspan="7">Rods &amp; Maces</td>
+        </tr>
+
         <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
+          <td>Rod<br><span class="jp">ロッド</span></td>
+          <td>40</td>
           <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>200</td>
+          <td>Initial: Keele</td>
+        </tr>
+
+        <tr>
+          <td>Mace<br><span class="jp">メイス</span></td>
+          <td>110</td>
           <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
+          <td>-</td>
+          <td>1200</td>
+          <td>600</td>
+          <td>Shop: Barole</td>
+        </tr>
+
+        <tr>
+          <td>Gem Rod<br><span class="jp">ジェムロッド</span></td>
+          <td>200</td>
+          <td>0</td>
+          <td>-</td>
+          <td>3200</td>
+          <td>1600</td>
+          <td>Shop: Chambard</td>
+        </tr>
+
+        <tr>
+          <td>Ruby Wand<br><span class="jp">ルビーワンド</span></td>
+          <td>260</td>
+          <td>0</td>
+          <td>-</td>
+          <td>7200</td>
+          <td>3600</td>
+          <td>Shop: Imen</td>
+        </tr>
+
+        <tr>
+          <td>Skull Staff<br><span class="jp">スカルスタッフ</span></td>
+          <td>380</td>
+          <td>0</td>
+          <td>-</td>
+          <td>11200</td>
+          <td>5600</td>
+          <td>
+            Shop: Peruti<br>
+            INT +5, LUCK -10<br>
+            Chance on hit to reduce target's Luck
+          </td>
+        </tr>
+
+        <tr>
+          <td>Holy Staff<br><span class="jp">ホーリィスタッフ</span></td>
+          <td>480</td>
+          <td>0</td>
+          <td>Light</td>
+          <td>-</td>
+          <td>16800</td>
+          <td>
+            Chest: Ruins of Volt<br>
+            Luck +8, 4% HP recovery on hit
+          </td>
+        </tr>
+
+        <tr>
+          <td>Star Mace<br><span class="jp">スターメイス</span></td>
+          <td>650</td>
+          <td>0</td>
+          <td>Elemental</td>
+          <td>-</td>
+          <td>28000</td>
+          <td>
+            Drop: Beast Ogre<br>
+            INT +5, Luck +5
+          </td>
+        </tr>
+
+        <tr>
+          <td>Crystal Rod<br>
+            <span class="jp">ＢＣロッド</span><br>
+            <span class="aka">BC Rod</span>
+          </td>
+          <td>740</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>37500</td>
+          <td>
+            Chest: Glimmer Spire<br>
+            Chance on hit to recover 1% TP
+          </td>
         </tr>
       </tbody>
     </table>
@@ -372,64 +611,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-

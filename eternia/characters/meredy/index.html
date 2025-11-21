@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eternia &mdash; Characters &mdash; Meredy</title>
+  <title>Tales of Eternia &mdash; Characters &mdash; Meredy</title>
 
   <style>
     :root {
@@ -112,47 +112,6 @@
       font-weight: 800;
     }
 
-    /* Mechanics */
-    .mechanics-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    .mechanic {
-      background: #eef2ff;
-      padding: 0.5rem 0.6rem;
-      border-radius: 10px;
-    }
-
-    .mechanic-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .mechanic-tag {
-      background: #ffffff;
-      border: 1px solid #c4b5fd;
-      padding: 0.15rem 0.45rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #4f46e5;
-    }
-
-    .mechanic-name {
-      font-weight: 700;
-      color: #111827;
-    }
-
-    .mechanic-desc {
-      font-size: 0.85rem;
-      color: #475569;
-    }
-
     /* Tabs */
     .tabs {
       display: flex;
@@ -223,12 +182,29 @@
       font-size: 0.9rem;
     }
 
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
     footer {
       background: #0b1020;
       color: #cbd5e1;
       padding: 1.2rem 0;
       margin-top: 3rem;
       text-align: center;
+    }
+
+    .jp {
+      font-size: 0.85em;
+      color: #4b5563;
+    }
+
+    .aka {
+      font-size: 0.8em;
+      color: #6b7280;
     }
   </style>
 
@@ -245,38 +221,26 @@
       <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
       <span class="logo-text">Tales Archive</span>
     </div>
-    <a href="../../index.html" class="back">&larr; Back to eternia</a>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Eternia</a>
   </div>
 
   <div class="container crumbs">
-    <a href="../../index.html">eternia</a> &bull; Meredy
+    <a href="../../index.html">Tales of Eternia</a> &bull; Meredy
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
     <div class="thumb">
-      <img src="../../../images/eternia/meredy-status.jpg" alt="Meredy status art">
+      <img src="../../../images/eternia/Meredy-status.jpg" alt="Meredy status art">
     </div>
 
     <div>
       <h1>Meredy</h1>
 
-      <div class="mechanics-list">
-        <div class="mechanic">
-          <div class="mechanic-header">
-            <span class="mechanic-tag">Mechanics</span>
-            <span class="mechanic-name">To be documented</span>
-          </div>
-          <div class="mechanic-desc">
-            Add this character's unique mechanics, personal skills, or link skills here.
-          </div>
-        </div>
-      </div>
-
       <div class="tabs">
         <button class="tab active" data-tab="artes">Artes</button>
-        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="titles">Titles</button>
         <button class="tab" data-tab="weapons">Weapons</button>
       </div>
     </div>
@@ -290,38 +254,269 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>JP Name</th>
           <th>Element</th>
-          <th>Arte Type</th>
-          <th>Scaling</th>
-          <th>Cost</th>
-          <th>Usage Upgrades</th>
-          <th>Learned</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-
-  <!-- Skills -->
-  <section id="panel-skills" class="panel">
-    <table id="tbl-skills">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect</th>
-          <th>SP Cost</th>
+          <th>Max Hits</th>
+          <th>TP</th>
           <th>Requirements</th>
           <th>Notes</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Craymel Artes -->
+        <tr class="section-row">
+          <td colspan="7">Craymel Artes (晶霊術 - Shoureijutsu)</td>
+        </tr>
+
         <tr>
-          <td>Sample Skill</td>
-          <td>Placeholder effect text</td>
-          <td>0</td>
-          <td>None</td>
-          <td>Replace with real data</td>
+          <td>Grave<br><span class="aka">Glaive</span></td>
+          <td><span class="jp">グレイブ</span></td>
+          <td>Earth</td>
+          <td>?</td>
+          <td>7</td>
+          <td>-</td>
+          <td>Default Earth Craymel Arte for Meredy</td>
+        </tr>
+
+        <tr>
+          <td>Ice Needles<br><span class="aka">Ice Needle</span></td>
+          <td><span class="jp">アイスニードル</span></td>
+          <td>Ice</td>
+          <td>?</td>
+          <td>6</td>
+          <td>-</td>
+          <td>Default Ice Craymel Arte for Meredy</td>
+        </tr>
+
+        <tr>
+          <td>Lightning</td>
+          <td><span class="jp">ライトニング</span></td>
+          <td>Lightning</td>
+          <td>?</td>
+          <td>7</td>
+          <td>-</td>
+          <td>Default Lightning Craymel Arte for Meredy</td>
+        </tr>
+
+        <!-- Destiny Summon -->
+        <tr class="section-row">
+          <td colspan="7">Destiny Summon (デスティニー - Destiny)</td>
+        </tr>
+
+        <tr>
+          <td>Destiny</td>
+          <td><span class="jp">デスティニー</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td>200</td>
+          <td>
+            • Exclusive to Meredy<br>
+            • Requires the item <b>S.D.</b><br>
+            • Usable once every 30 minutes<br>
+            • Summons the Swordian Masters (Tales of Destiny)
+          </td>
+          <td>Starts the Destiny summon chain</td>
+        </tr>
+
+        <tr>
+          <td>Shikou Bakuenjin<br><span class="aka">Fiery Beast</span></td>
+          <td><span class="jp">獅吼爆炎陣</span></td>
+          <td>Earth / Fire</td>
+          <td>8</td>
+          <td>-</td>
+          <td>Automatically extends from Destiny</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Snipe Air</td>
+          <td><span class="jp">スナイプエア</span></td>
+          <td>Wind</td>
+          <td>4</td>
+          <td>-</td>
+          <td>Automatically extends from Shikou Bakuenjin</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Dankuuken<br><span class="aka">Severing Wind</span></td>
+          <td><span class="jp">断空剣</span></td>
+          <td>Wind</td>
+          <td>6</td>
+          <td>-</td>
+          <td>Automatically extends from Snipe Air</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Philia Bomb</td>
+          <td><span class="jp">フィリアボム</span></td>
+          <td>Light</td>
+          <td>10</td>
+          <td>-</td>
+          <td>Automatically extends from Dankuuken</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Marian<br><span class="aka">Demon Attack</span></td>
+          <td><span class="jp">魔人闇</span></td>
+          <td>Dark</td>
+          <td>1</td>
+          <td>-</td>
+          <td>Automatically extends from Philia Bomb</td>
+          <td>Final extension in the Destiny chain</td>
+        </tr>
+
+        <!-- Team Skills -->
+        <tr class="section-row">
+          <td colspan="7">Team Skills (協力技 - Kyouryokuwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Earth Divide<br><span class="aka">Dankuuken / Severing Wind</span></td>
+          <td><span class="jp">断空剣</span></td>
+          <td>Wind / Light</td>
+          <td>9 + ?</td>
+          <td>10</td>
+          <td>
+            Meredy &mdash; Cyclone (サイクロン)<br>
+            Reid Hershel &mdash; Spiral Attack (閃空裂破 / Senkuureppa)<br>
+            Cyclone must finish casting as Spiral Attack lands
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Serpent Knuckle<br><span class="aka">Kairyuuken</span></td>
+          <td><span class="jp">海龍拳</span></td>
+          <td>Lightning / Water</td>
+          <td>10</td>
+          <td>12</td>
+          <td>
+            Meredy &mdash; Heal (ヒール)<br>
+            Farah Oersted &mdash; Rising Dragon Strike (臥龍空破 / Garyoukuuha)<br>
+            Heal must finish casting as Rising Dragon Strike lands<br>
+            Heals 50% of Farah's max HP
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Lightning Strike<br><span class="aka">Raisenken</span></td>
+          <td><span class="jp">雷閃拳</span></td>
+          <td>Lightning</td>
+          <td>7</td>
+          <td>12</td>
+          <td>
+            Meredy &mdash; Thunder Blade (サンダーブレード)<br>
+            Farah Oersted &mdash; Twin Palm Strike (双撞掌底破 / Soudou Shouteiha)<br>
+            Thunder Blade must finish casting as the strike lands
+          </td>
+          <td>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Titles -->
+  <section id="panel-titles" class="panel">
+    <table id="tbl-titles">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>JP</th>
+          <th>Romaji</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Foreigner?</td>
+          <td>いこくのしょうじょ？</td>
+          <td>Ikoku no Shoujo?</td>
+          <td>Default title</td>
+        </tr>
+
+        <tr>
+          <td>Breeder</td>
+          <td>ブリーダー</td>
+          <td>Breeder</td>
+          <td>Reach level 30</td>
+        </tr>
+
+        <tr>
+          <td>Trainer</td>
+          <td>ちょうきょうし</td>
+          <td>Choukyoushi</td>
+          <td>Reach level 60</td>
+        </tr>
+
+        <tr>
+          <td>Appraiser</td>
+          <td>はくらく</td>
+          <td>Hakuraku</td>
+          <td>Reach level 99</td>
+        </tr>
+
+        <tr>
+          <td>Fringe Master</td>
+          <td>フリンジマスター</td>
+          <td>Fringemaster</td>
+          <td>Create every Craymel Arte via fringing</td>
+        </tr>
+
+        <tr>
+          <td>Charismatic Cook</td>
+          <td>カリスマコック</td>
+          <td>Charisma Cook</td>
+          <td>Master all dishes</td>
+        </tr>
+
+        <tr>
+          <td>Performer?</td>
+          <td>たびげいにん？</td>
+          <td>Tabigeinin?</td>
+          <td>Obtained at Rasheans River Pier</td>
+        </tr>
+
+        <tr>
+          <td>Craymel Mage?</td>
+          <td>しょうれいじゅつし？</td>
+          <td>Shoureijutsushi?</td>
+          <td>Obtained at Mintche University</td>
+        </tr>
+
+        <tr>
+          <td>Craymel Engineer</td>
+          <td>しょうれいぎし</td>
+          <td>Shoureigishi</td>
+          <td>Obtained at Imen when returning for fuel</td>
+        </tr>
+
+        <tr>
+          <td>Flying Dancer</td>
+          <td>フライングダンサー</td>
+          <td>Flying Dancer</td>
+          <td>Win Etapoke 2</td>
+        </tr>
+
+        <tr>
+          <td>Choo-choo Girl</td>
+          <td>ぽっぽや</td>
+          <td>Poppoya</td>
+          <td>Deliver at least 3 letters to each recipient in the Craymel Express mini-game</td>
+        </tr>
+
+        <tr>
+          <td>Dance Queen</td>
+          <td>ぷりぷりマドンナ</td>
+          <td>Puri Puri Madonna</td>
+          <td>Score at least 8.00 in the 1-player Dancing mini-game</td>
         </tr>
       </tbody>
     </table>
@@ -333,21 +528,124 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Attack</th>
+          <th>Accuracy</th>
           <th>Element</th>
-          <th>P.ATK</th>
-          <th>A.ATK</th>
-          <th>Price</th>
+          <th>Cost</th>
+          <th>Sell</th>
           <th>Acquisition</th>
         </tr>
       </thead>
       <tbody>
+        <tr class="section-row">
+          <td colspan="7">Whistles</td>
+        </tr>
+
         <tr>
-          <td>Sample Weapon</td>
-          <td>None</td>
+          <td>Whistle<br><span class="jp">ホイッスル</span></td>
+          <td>35</td>
+          <td>-3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>150</td>
+          <td>Initial: Meredy</td>
+        </tr>
+
+        <tr>
+          <td>Chirp Whistle<br>
+            <span class="jp">ピヨピヨＷ</span><br>
+            <span class="aka">Piyopiyo W</span>
+          </td>
+          <td>100</td>
+          <td>-5</td>
+          <td>-</td>
+          <td>-</td>
+          <td>660</td>
+          <td>Chest: Morle Backwoods<br>Luck +5</td>
+        </tr>
+
+        <tr>
+          <td>Bird Whistle<br>
+            <span class="jp">ウグイスブエ</span><br>
+            <span class="aka">Uguisu-bue</span>
+          </td>
+          <td>160</td>
           <td>0</td>
+          <td>-</td>
+          <td>1640</td>
+          <td>820</td>
+          <td>Shop: Inferia City</td>
+        </tr>
+
+        <tr>
+          <td>Pretty Whistle<br>
+            <span class="jp">プリティホラガイ</span><br>
+            <span class="aka">Pretty Horagai</span>
+          </td>
+          <td>200</td>
           <td>0</td>
-          <td>0 Gald</td>
-          <td>Replace with acquisition method</td>
+          <td>-</td>
+          <td>3060</td>
+          <td>1580</td>
+          <td>Shop: Chambard<br>Luck +8</td>
+        </tr>
+
+        <tr>
+          <td>Memory Whistle<br>
+            <span class="jp">メモリーＷ</span><br>
+            <span class="aka">Memory W</span>
+          </td>
+          <td>300</td>
+          <td>0</td>
+          <td>-</td>
+          <td>8000</td>
+          <td>4000</td>
+          <td>Shop: Luishka Station</td>
+        </tr>
+
+        <tr>
+          <td>Trumpet<br>
+            <span class="jp">トツゲキラッパ</span><br>
+            <span class="aka">Totsugeki Rappa</span>
+          </td>
+          <td>360</td>
+          <td>0</td>
+          <td>-</td>
+          <td>17600</td>
+          <td>8800</td>
+          <td>Shop: Tinnsia<br>Chance to inflict Dizzy</td>
+        </tr>
+
+        <tr>
+          <td>Twinkle Flute<br>
+            <span class="jp">トゥインクルＦ</span><br>
+            <span class="aka">Twinkle F</span>
+          </td>
+          <td>580</td>
+          <td>0</td>
+          <td>-</td>
+          <td>-</td>
+          <td>24000</td>
+          <td>
+            Chest: Sunken Ship<br>
+            INT +3, Luck +8
+          </td>
+        </tr>
+
+        <tr>
+          <td>Eternia Melody<br>
+            <span class="jp">エターニアＭ</span><br>
+            <span class="aka">Eternia M</span>
+          </td>
+          <td>750</td>
+          <td>0</td>
+          <td>Time</td>
+          <td>-</td>
+          <td>38000</td>
+          <td>
+            Chest: Shizel Castle<br>
+            INT +5
+          </td>
         </tr>
       </tbody>
     </table>
@@ -372,64 +670,27 @@
     });
   });
 
-  // Artes data
-  const ARTES = [
-    {
-      name: "Sample Arte",
-      element: "",
-      arteType: "",
-      scaling: "",
-      cost: "",
-      upgrades: "",
-      learned: "",
-      notes: ""
-    }
-  ];
+  // Simple artes table search (works on the main artes table)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
 
-  const tbodyA = document.querySelector("#tbl-artes tbody");
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
 
-  function renderArtes(rows) {
-    tbodyA.innerHTML = rows
-      .map(
-        (a) => `
-      <tr>
-        <td>${a.name || ""}</td>
-        <td>${a.element || ""}</td>
-        <td>${a.arteType || ""}</td>
-        <td>${a.scaling || ""}</td>
-        <td>${a.cost || ""}</td>
-        <td>${a.upgrades || ""}</td>
-        <td>${a.learned || ""}</td>
-        <td>${a.notes || ""}</td>
-      </tr>
-    `
-      )
-      .join("");
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
   }
-
-  renderArtes(ARTES);
-
-  // Artes search
-  document.getElementById("search-artes").addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
-    renderArtes(
-      ARTES.filter((a) =>
-        (
-          (a.name || "") +
-          " " +
-          (a.element || "") +
-          " " +
-          (a.arteType || "") +
-          " " +
-          (a.notes || "")
-        )
-          .toLowerCase()
-          .includes(q)
-      )
-    );
-  });
 </script>
 
 </body>
 </html>
-
