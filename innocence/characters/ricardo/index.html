@@ -1,0 +1,435 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>innocence &mdash; Characters &mdash; Ricardo</title>
+
+  <style>
+    :root {
+      --ink: #0f172a;
+      --bg: #0b1020;
+      --ring: rgba(109, 40, 217, 0.35);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: var(--ink);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--bg);
+      color: #e2e8f0;
+    }
+
+    .nav {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 800;
+    }
+
+    .logo-img {
+      height: 24px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .crumbs {
+      padding-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .crumbs a {
+      color: #cbd5e1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .back {
+      display: inline-block;
+      padding: 0.5rem 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: transparent;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2rem 0;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .thumb {
+      width: 280px;
+      height: 360px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #2a3650;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb img {
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0.2rem 0 0.6rem;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    /* Mechanics */
+    .mechanics-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .mechanic {
+      background: #eef2ff;
+      padding: 0.5rem 0.6rem;
+      border-radius: 10px;
+    }
+
+    .mechanic-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .mechanic-tag {
+      background: #ffffff;
+      border: 1px solid #c4b5fd;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #4f46e5;
+    }
+
+    .mechanic-name {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .mechanic-desc {
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 0.6rem;
+      margin: 1.3rem 0;
+    }
+
+    .tab {
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .tab.active {
+      background: #6d28d9;
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .panel {
+      display: none;
+      padding-top: 0.5rem;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    /* Search + table */
+    input[type="search"] {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      font: inherit;
+    }
+
+    input[type="search"]:focus {
+      border-color: #6d28d9;
+      box-shadow: 0 0 0 3px var(--ring);
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 6px;
+    }
+
+    thead th {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.85rem;
+      text-align: left;
+      color: #475569;
+    }
+
+    tbody td {
+      background: #ffffff;
+      padding: 0.6rem 0.6rem;
+      border: 1px solid #e2e8f0;
+      border-left: none;
+      border-right: none;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #0b1020;
+      color: #cbd5e1;
+      padding: 1.2rem 0;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  </style>
+
+  <!-- Favicon (3 levels up from /game/characters/char/index.html) -->
+  <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
+      <span class="logo-text">Tales Archive</span>
+    </div>
+    <a href="../../index.html" class="back">&larr; Back to innocence</a>
+  </div>
+
+  <div class="container crumbs">
+    <a href="../../index.html">innocence</a> &bull; Ricardo
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="thumb">
+      <img src="../../../images/innocence/ricardo-status.jpg" alt="Ricardo status art">
+    </div>
+
+    <div>
+      <h1>Ricardo</h1>
+
+      <div class="mechanics-list">
+        <div class="mechanic">
+          <div class="mechanic-header">
+            <span class="mechanic-tag">Mechanics</span>
+            <span class="mechanic-name">To be documented</span>
+          </div>
+          <div class="mechanic-desc">
+            Add this character's unique mechanics, personal skills, or link skills here.
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="artes">Artes</button>
+        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="weapons">Weapons</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artes -->
+  <section id="panel-artes" class="panel active">
+    <input type="search" id="search-artes" placeholder="Search artes...">
+
+    <table id="tbl-artes">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Element</th>
+          <th>Arte Type</th>
+          <th>Scaling</th>
+          <th>Cost</th>
+          <th>Usage Upgrades</th>
+          <th>Learned</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section id="panel-skills" class="panel">
+    <table id="tbl-skills">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Effect</th>
+          <th>SP Cost</th>
+          <th>Requirements</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample Skill</td>
+          <td>Placeholder effect text</td>
+          <td>0</td>
+          <td>None</td>
+          <td>Replace with real data</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Weapons -->
+  <section id="panel-weapons" class="panel">
+    <table id="tbl-weapons">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Element</th>
+          <th>P.ATK</th>
+          <th>A.ATK</th>
+          <th>Price</th>
+          <th>Acquisition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample Weapon</td>
+          <td>None</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0 Gald</td>
+          <td>Replace with acquisition method</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>&copy; 2025 Tales Archive</footer>
+
+<script>
+  // Tabs
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".panel");
+
+  tabs.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((p) => p.classList.remove("active"));
+      btn.classList.add("active");
+      document
+        .getElementById("panel-" + btn.dataset.tab)
+        .classList.add("active");
+    });
+  });
+
+  // Artes data
+  const ARTES = [
+    {
+      name: "Sample Arte",
+      element: "",
+      arteType: "",
+      scaling: "",
+      cost: "",
+      upgrades: "",
+      learned: "",
+      notes: ""
+    }
+  ];
+
+  const tbodyA = document.querySelector("#tbl-artes tbody");
+
+  function renderArtes(rows) {
+    tbodyA.innerHTML = rows
+      .map(
+        (a) => `
+      <tr>
+        <td>${a.name || ""}</td>
+        <td>${a.element || ""}</td>
+        <td>${a.arteType || ""}</td>
+        <td>${a.scaling || ""}</td>
+        <td>${a.cost || ""}</td>
+        <td>${a.upgrades || ""}</td>
+        <td>${a.learned || ""}</td>
+        <td>${a.notes || ""}</td>
+      </tr>
+    `
+      )
+      .join("");
+  }
+
+  renderArtes(ARTES);
+
+  // Artes search
+  document.getElementById("search-artes").addEventListener("input", (e) => {
+    const q = e.target.value.toLowerCase();
+    renderArtes(
+      ARTES.filter((a) =>
+        (
+          (a.name || "") +
+          " " +
+          (a.element || "") +
+          " " +
+          (a.arteType || "") +
+          " " +
+          (a.notes || "")
+        )
+          .toLowerCase()
+          .includes(q)
+      )
+    );
+  });
+</script>
+
+</body>
+</html>
+

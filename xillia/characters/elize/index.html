@@ -1,0 +1,1236 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tales of Xillia &mdash; Characters &mdash; Elize Lutus</title>
+
+  <style>
+    :root {
+      --ink: #0f172a;
+      --bg: #0b1020;
+      --ring: rgba(109, 40, 217, 0.35);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: var(--ink);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--bg);
+      color: #e2e8f0;
+    }
+
+    .nav {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 800;
+    }
+
+    .logo-img {
+      height: 24px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .crumbs {
+      padding-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .crumbs a {
+      color: #cbd5e1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .back {
+      display: inline-block;
+      padding: 0.5rem 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: transparent;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2rem 0;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .thumb {
+      width: 500px;   
+      height: 360px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #2a3650;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    h1 {
+      margin: 0.2rem 0 0.6rem;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    /* Mechanics */
+    .mechanics-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .mechanic {
+      background: #eef2ff;
+      padding: 0.5rem 0.6rem;
+      border-radius: 10px;
+    }
+
+    .mechanic-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .mechanic-tag {
+      background: #ffffff;
+      border: 1px solid #c4b5fd;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #4f46e5;
+    }
+
+    .mechanic-name {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .mechanic-desc {
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 0.6rem;
+      margin: 1.3rem 0;
+    }
+
+    .tab {
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .tab.active {
+      background: #6d28d9;
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .panel {
+      display: none;
+      padding-top: 0.5rem;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    /* Search + tables */
+    input[type="search"] {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      font: inherit;
+    }
+
+    input[type="search"]:focus {
+      border-color: #6d28d9;
+      box-shadow: 0 0 0 3px var(--ring);
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 6px;
+    }
+
+    thead th {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.85rem;
+      text-align: left;
+      color: #475569;
+    }
+
+    tbody td {
+      background: #ffffff;
+      padding: 0.6rem 0.6rem;
+      border: 1px solid #e2e8f0;
+      border-left: none;
+      border-right: none;
+      font-size: 0.9rem;
+    }
+
+    tbody tr.section-row td {
+      background: #e5e7eb;
+      font-weight: 700;
+      border-radius: 8px;
+      border-color: #cbd5e1;
+    }
+
+    .skill-table tbody td,
+    .weapon-table tbody td {
+      border-radius: 6px;
+    }
+
+    .jp {
+      font-size: 0.8em;
+      color: #64748b;
+    }
+
+    footer {
+      background: #0b1020;
+      color: #cbd5e1;
+      padding: 1.2rem 0;
+      margin-top: 3rem;
+      text-align: center;
+    }
+	
+	
+	
+  </style>
+
+  <!-- Favicon (3 levels up from /game/characters/char/index.html) -->
+  <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="../../../logo.png" class="logo-img" alt="Tales Archive Logo">
+      <span class="logo-text">Tales Archive</span>
+    </div>
+    <a href="../../index.html" class="back">&larr; Back to Tales of Xillia</a>
+  </div>
+
+  <div class="container crumbs">
+    <a href="../../index.html">Tales of Xillia</a> &bull; Elize Lutus
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="thumb">
+      <img src="../../../images/xillia/elize-status.jpg" alt="Elize status art">
+    </div>
+
+    <div>
+      <h1>Elize Lutus</h1>
+
+      <div class="mechanics-list">
+        <div class="mechanic">
+          <div class="mechanic-header">
+            <span class="mechanic-tag">Special Ability</span>
+            <span class="mechanic-name">Teepo Switching</span>
+          </div>
+          <div class="mechanic-desc">
+            Pressing Taunt will cause Elize to switch between Teepo ON and Teepo OFF.
+            While Teepo is ON, Elize's spirit artes are enhanced and her normal attacks become ranged.
+            While Teepo is OFF, Elize's martial artes are enhanced and her normal attack becomes a melee strike.
+          </div>
+        </div>
+
+        <div class="mechanic">
+          <div class="mechanic-header">
+            <span class="mechanic-tag">Partner Skill</span>
+            <span class="mechanic-name">Teepo Drain</span>
+          </div>
+          <div class="mechanic-desc">
+            2% chance with each hit to drain 10% of max HP and 5% TP.
+            5% more likely if the partner's HP is under 50%.
+            5% higher on bosses.
+            15% higher if the target is Technical.
+            20% more likely if the partner is under 50% TP.
+            30% more likely if the target is launched into the air.
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="artes">Artes</button>
+        <button class="tab" data-tab="skills">Skills</button>
+        <button class="tab" data-tab="weapons">Weapons</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artes -->
+  <section id="panel-artes" class="panel active">
+    <input type="search" id="search-artes" placeholder="Search artes...">
+
+    <table id="tbl-artes">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Element</th>
+          <th>Arte Type</th>
+          <th>Scaling</th>
+          <th>Cost</th>
+          <th>Usage Upgrades</th>
+          <th>Learned</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Martial Artes -->
+        <tr class="section-row">
+          <td colspan="8">Martial Artes (武身技 - Bushinwaza)</td>
+        </tr>
+
+        <tr>
+          <td>Pow Hammer (Pikohan / ピコハン)</td>
+          <td>None</td>
+          <td>Martial Arte</td>
+          <td>-</td>
+          <td>5 TP</td>
+          <td>Stun chance increases after 100 uses.</td>
+          <td>Lilium Orb: Orb 1 Node 1</td>
+          <td>Stun; Stun chance is higher while Teepo is OFF.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Spray (Tipo Salive / ティポサライブ)</td>
+          <td>Dark</td>
+          <td>Martial Arte</td>
+          <td>-</td>
+          <td>7 TP</td>
+          <td>Adds an extra hit after 200 uses; projectile speed and range increase while Teepo is ON after 100 uses.</td>
+          <td>Lilium Orb: Orb 1 Node 2</td>
+          <td>Terror; Larger, slower shots while Teepo is OFF; faster, longer-range shots while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Quake (Tipo Rising / ティポライジング)</td>
+          <td>Earth</td>
+          <td>Martial Arte</td>
+          <td>-</td>
+          <td>10 TP</td>
+          <td>Max hits increase after 200 uses; forces downed enemies to stand after 200 uses.</td>
+          <td>Lilium Orb: Orb 2 Node 1</td>
+          <td>Stand Up; Slow; More hits while Teepo is OFF.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Roar (Tipo Senkou / ティポ戦吼)</td>
+          <td>None</td>
+          <td>Martial Arte</td>
+          <td>VIT</td>
+          <td>12 TP</td>
+          <td>Guard Break becomes available after 100 uses.</td>
+          <td>Lilium Orb: Orb 1 Node 8</td>
+          <td>Knockdown; Guard Break; Range and knockback increase while Teepo is OFF.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Copter (Tipo Glider / ティポグライダー)</td>
+          <td>Wind</td>
+          <td>Martial Arte</td>
+          <td>AGL</td>
+          <td>16 TP</td>
+          <td>Tracking precision increases at 400 and 1000 uses.</td>
+          <td>Lilium Orb: Orb 1 Node 5</td>
+          <td>Paralysis; Max hits and flight duration increase while Teepo is OFF.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Squash (Tipo Pressure / ティポプレッシャー)</td>
+          <td>None</td>
+          <td>Martial Arte</td>
+          <td>-</td>
+          <td>12 TP</td>
+          <td>Area of effect increases at 100 and 200 uses.</td>
+          <td>Lilium Orb: Orb 2 Node 1</td>
+          <td>Area of effect is larger while Teepo is OFF.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Vacuum (Tipo Vacuum / ティポバキューム)</td>
+          <td>Dark</td>
+          <td>Martial Arte</td>
+          <td>DEX</td>
+          <td>36 TP</td>
+          <td>Can swallow mid-weight enemies after 100 uses, heavy enemies after 400, and super-heavy enemies after 1000 uses.</td>
+          <td>Lilium Orb: Orb 2 Node 5</td>
+          <td>Knockdown; Terror; More hits while Teepo is OFF; only damages light-weight enemies at base.</td>
+        </tr>
+
+        <!-- Spirit Artes -->
+        <tr class="section-row">
+          <td colspan="8">Novice Spirit Artes (下級術 - Kakyuujutsu)</td>
+        </tr>
+
+        <tr>
+          <td>Pixie Circle (ピクシーサークル)</td>
+          <td>None</td>
+          <td>Novice Spirit Arte</td>
+          <td>-</td>
+          <td>12 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 1</td>
+          <td>Heals 10% max HP to allies in a small area; heals 20% and gains larger range while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Recover (リカバー)</td>
+          <td>None</td>
+          <td>Novice Spirit Arte</td>
+          <td>-</td>
+          <td>10 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 1</td>
+          <td>Cures all negative status ailments for one ally.</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Intermediate Spirit Artes (中級術 - Chuukyuujutsu)</td>
+        </tr>
+
+        <tr>
+          <td>Healing Circle (Hurtless Circle / ハートレスサークル)</td>
+          <td>None</td>
+          <td>Intermediate Spirit Arte</td>
+          <td>-</td>
+          <td>24 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 4</td>
+          <td>Heals up to 40% max HP (10% per burst) to allies in a medium area; heals up to 50% while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Dispel (ディスペル)</td>
+          <td>None</td>
+          <td>Intermediate Spirit Arte</td>
+          <td>-</td>
+          <td>22 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 6</td>
+          <td>Cures all negative status ailments for all allies; grants temporary status-blocking while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Resurrection (Raise Dead / レイズデッド)</td>
+          <td>None</td>
+          <td>Intermediate Spirit Arte</td>
+          <td>-</td>
+          <td>26 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 6</td>
+          <td>Heals 50% max HP to one ally; revives them with 50% HP if knocked out.</td>
+        </tr>
+
+        <tr>
+          <td>Negative Gate (ネガティブゲイト)</td>
+          <td>Dark</td>
+          <td>Intermediate Spirit Arte</td>
+          <td>-</td>
+          <td>24 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 1 Node 5</td>
+          <td>Terror; pulls enemies toward the center; pulling power increases while Teepo is ON.</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="8">Advanced Spirit Artes (上級術 - Joukyuujutsu)</td>
+        </tr>
+
+        <tr>
+          <td>Nurse (ナース)</td>
+          <td>None</td>
+          <td>Advanced Spirit Arte</td>
+          <td>-</td>
+          <td>36 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 2 Node 4</td>
+          <td>Heals 50% max HP to all allies; heals 60% while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Revive (リヴァイヴ)</td>
+          <td>None</td>
+          <td>Advanced Spirit Arte</td>
+          <td>-</td>
+          <td>50 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 2 Node 5</td>
+          <td>Places a buff that automatically revives the affected ally on KO; effect is not shared to linked partners.</td>
+        </tr>
+
+        <tr>
+          <td>Dark Visitor (Black Guide / ブラックガイド)</td>
+          <td>Dark</td>
+          <td>Advanced Spirit Arte</td>
+          <td>-</td>
+          <td>32 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 2 Node 5</td>
+          <td>Terror; chance to inflict Instant Death; Instant Death chance increases while Teepo is ON.</td>
+        </tr>
+
+        <tr>
+          <td>Dread Wings (Flutters Dim / フラッターズ・ディム)</td>
+          <td>Dark</td>
+          <td>Advanced Spirit Arte</td>
+          <td>-</td>
+          <td>30 TP</td>
+          <td>Hit count increases at higher usage milestones.</td>
+          <td>Lilium Orb: Orb 2 Node 3</td>
+          <td>Terror; hit count is higher while Teepo is ON.</td>
+        </tr>
+
+        <!-- Linked Artes -->
+        <tr class="section-row">
+          <td colspan="8">Linked Artes (共鳴術技リンクアーツ - Link Artes)</td>
+        </tr>
+
+        <tr>
+          <td>Giant Teepo Drop (Giant Tipo Drop / ジャイアントティポドロップ)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Range increases up to 100 uses.</td>
+          <td>Elize + Jude. Teepo Squash + Raging Blast.</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Pixie Heal (Aid All / エイドオール)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Jude. Pixie Circle + Healer.</td>
+          <td>Heals 40% max HP to all allies.</td>
+        </tr>
+
+        <tr>
+          <td>Dragon Pillar (Garyou Upper / 臥龍アッパー)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Power and hits increase up to 100 uses.</td>
+          <td>Elize + Jude. Teepo Quake + Dragon Shot.</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Enraged (Tipo the Beast / ティポ・ザ・ビースト)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Jude. Teepo Roar + Beast.</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Recover Heal (リカバーヒール)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Jude. Recover + Recovery Ring.</td>
+          <td>Heals 30% max HP and cures all status ailments; grants temporary status immunity.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Invoked (Magical Tipo / マジカルティポ)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Knockback distance increases up to 100 uses.</td>
+          <td>Elize + Milla. Teepo Spray + Sigil Spear.</td>
+          <td>Knockdown.</td>
+        </tr>
+
+        <tr>
+          <td>Fairy Circle (フェアリーサークル)</td>
+          <td>Wind</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Milla. Healing Circle + Arrivederci.</td>
+          <td>Paralysis; heals 75% max HP to allies in a medium area.</td>
+        </tr>
+
+        <tr>
+          <td>Chaotic Fusion (Chaotic Fuser / ケオティックフューザー)</td>
+          <td>Fire / Water / Wind / Earth</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Milla. Dread Wings + Shining Prism.</td>
+          <td>Burn; Weak; Paralysis; Slow.</td>
+        </tr>
+
+        <tr>
+          <td>Hammer Rain (Piko Rain / ピコレイン)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Adds 1 hammer every 20 uses (up to +15); hammer spread tightens after 100 uses (max at 200).</td>
+          <td>Elize + Milla. Pow Hammer + Wind Lance.</td>
+          <td>Stun; concentrated hammer barrage.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Flux (Thunder Pressure / サンダープレッシャー)</td>
+          <td>Fire / Wind</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Chain duration extends as use count rises; max hits increase with usage milestones.</td>
+          <td>Elize + Milla. Teepo Squash + Thunder Blade.</td>
+          <td>Burn; Paralysis.</td>
+        </tr>
+
+        <tr>
+          <td>Pow Blade (Pikohazan / ピコ破斬)</td>
+          <td>Light</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Deals an additional hit while Alvin's Charge ability is active.</td>
+          <td>Elize + Alvin. Pow Hammer + Tiger Blade.</td>
+          <td>Confusion; Stun.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Cannon (Tipo BUSTER / ティポ・BUSTER)</td>
+          <td>Fire</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Can be extended by holding the Arte button after 100 uses.</td>
+          <td>Elize + Alvin. Teepo Spray + Variable Trigger.</td>
+          <td>Knockdown; Burn.</td>
+        </tr>
+
+        <tr>
+          <td>Teepo Unleashed (Tipo Tipo Chaser / ティポティポチェイサー)</td>
+          <td>Dark</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Tracking improves by 120 uses; range increases by 200 uses.</td>
+          <td>Elize + Alvin. Teepo Vacuum + Homing Shot.</td>
+          <td>Terror.</td>
+        </tr>
+
+        <tr>
+          <td>Ascending Streak (Riot Glider / ライオットグライダー)</td>
+          <td>Wind</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Flight time increases up to 180 uses; new movement inputs unlock at 10/20/40/80/200 uses.</td>
+          <td>Elize + Leia. Teepo Copter + Spiral Strike.</td>
+          <td>Paralysis; aerial chase move.</td>
+        </tr>
+
+        <tr>
+          <td>Revitalize (Resurrection / リザレクション)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Leia. Nurse + Cure.</td>
+          <td>Heals 160% max HP over 8 ticks; cures all status ailments for all allies.</td>
+        </tr>
+
+        <tr>
+          <td>Full Resurrection (Full Raise Dead / フルレイズデッド)</td>
+          <td>None</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Leia. Resurrection + Resurrection.</td>
+          <td>Revives and fully heals one KO’d ally; grants auto-revive plus +20% P. ATK / A. ATK / defenses.</td>
+        </tr>
+
+        <tr>
+          <td>Pow Pow Waltz (Piko Piko Waltz / ピコピコワルツ)</td>
+          <td>Light</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Rowen. Pow Hammer + Marche Waltz.</td>
+          <td>Confusion; Stun.</td>
+        </tr>
+
+        <tr>
+          <td>Gravity Well (Gravity / グラヴィティ)</td>
+          <td>Dark</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Rowen. Negative Gate + Roche Waltz.</td>
+          <td>Knockdown; Terror.</td>
+        </tr>
+
+        <tr>
+          <td>Azalea Blade (アゼリアブレード)</td>
+          <td>Water / Earth</td>
+          <td>Linked Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Elize + Rowen. Dark Visitor + Diffusional Drive.</td>
+          <td>Knockdown; Weak; Slow.</td>
+        </tr>
+
+        <!-- Arcane Artes -->
+        <tr class="section-row">
+          <td colspan="8">Arcane Artes (奥義 - Ougi)</td>
+        </tr>
+
+        <tr>
+          <td>Ignite Terror (Revere Ignition / リベールイグニッション)</td>
+          <td>Dark</td>
+          <td>Arcane Arte</td>
+          <td>-</td>
+          <td>30 TP</td>
+          <td>-</td>
+          <td>Lilium Orb: Orb 2 Node 2</td>
+          <td>Terror.</td>
+        </tr>
+
+        <!-- Mystic Artes -->
+        <tr class="section-row">
+          <td colspan="8">Mystic Artes (秘奥義 - Hi Ougi)</td>
+        </tr>
+
+        <tr>
+          <td>Scary-Go-Round (Revere Go Round / リベールゴーランド)</td>
+          <td>Dark</td>
+          <td>Mystic Arte</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Overlimit; hold Attack after Ignite Terror.</td>
+          <td>Inflicts Burn, Slow, Weak, Stun, and Terror across multiple hits.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section id="panel-skills" class="panel">
+    <table class="skill-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Link</th>
+          <th>SP Cost</th>
+          <th>Requirements</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Strength<br><span class="jp">ストレングス</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases strength by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Strength 2<br><span class="jp">ストレングス２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases strength by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Vitality<br><span class="jp">スタミナ</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases vitality by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Vitality 2<br><span class="jp">スタミナ２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases vitality by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Agility<br><span class="jp">アジリティ</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases agility by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Agility 2<br><span class="jp">アジリティ２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases agility by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Intelligence<br><span class="jp">インテリジェンス</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases intelligence by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Intelligence 2<br><span class="jp">インテリジェンス２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases intelligence by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Psyche<br><span class="jp">マインド</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases psyche by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Psyche 2<br><span class="jp">マインド２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 4</td>
+          <td>Increases psyche by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Psyche 3<br><span class="jp">マインド３</span></td>
+          <td>Yes</td>
+          <td>6</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases psyche by 15%.</td>
+        </tr>
+
+        <tr>
+          <td>Dexterity<br><span class="jp">デクステリティ</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 7</td>
+          <td>Increases dexterity by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Dexterity 2<br><span class="jp">デクステリティ２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 6</td>
+          <td>Increases dexterity by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Vitality<br><span class="jp">バイタリティ</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 1</td>
+          <td>Increases max HP by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Vitality 2<br><span class="jp">バイタリティ２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 2 Node 4</td>
+          <td>Increases max HP by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Spirit<br><span class="jp">スピリッツ</span></td>
+          <td>Yes</td>
+          <td>3</td>
+          <td>Lilium Orb: Orb 1 Node 4</td>
+          <td>Increases max TP by 5%.</td>
+        </tr>
+
+        <tr>
+          <td>Spirit 2<br><span class="jp">スピリッツ２</span></td>
+          <td>Yes</td>
+          <td>4</td>
+          <td>Lilium Orb: Orb 1 Node 8</td>
+          <td>Increases max TP by 10%.</td>
+        </tr>
+
+        <tr>
+          <td>Spirit 3<br><span class="jp">スピリッツ３</span></td>
+          <td>Yes</td>
+          <td>6</td>
+          <td>Lilium Orb: Orb 2 Node 4</td>
+          <td>Increases max TP by 15%.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Weapons -->
+  <section id="panel-weapons" class="panel">
+    <table class="weapon-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Element</th>
+          <th>P. ATK</th>
+          <th>A. ATK</th>
+          <th>Cost</th>
+          <th>Sell</th>
+          <th>Acquisition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wand<br><span class="jp">ワンド</span></td>
+          <td>-</td>
+          <td>167</td>
+          <td>168</td>
+          <td>2040</td>
+          <td>714</td>
+          <td>Shop Lv. 10. Initial: Elize.</td>
+        </tr>
+
+        <tr>
+          <td>Mace<br><span class="jp">メイス</span></td>
+          <td>-</td>
+          <td>211</td>
+          <td>210</td>
+          <td>3070</td>
+          <td>1074</td>
+          <td>Shop Lv. 15.</td>
+        </tr>
+
+        <tr>
+          <td>Ruby Wand<br><span class="jp">ルビーワンド</span></td>
+          <td>Earth</td>
+          <td>255</td>
+          <td>252</td>
+          <td>4310</td>
+          <td>1508</td>
+          <td>Shop Lv. 20.</td>
+        </tr>
+
+        <tr>
+          <td>Air Rod<br><span class="jp">エアーズロッド</span></td>
+          <td>Wind</td>
+          <td>299</td>
+          <td>294</td>
+          <td>5760</td>
+          <td>2016</td>
+          <td>Shop Lv. 25.</td>
+        </tr>
+
+        <tr>
+          <td>Court Staff<br><span class="jp">コートスタッフ</span></td>
+          <td>-</td>
+          <td>342</td>
+          <td>336</td>
+          <td>7410</td>
+          <td>2593</td>
+          <td>Shop Lv. 30.</td>
+        </tr>
+
+        <tr>
+          <td>Precious Wand<br><span class="jp">プレシャスワンド</span></td>
+          <td>-</td>
+          <td>386</td>
+          <td>378</td>
+          <td>9280</td>
+          <td>3248</td>
+          <td>Shop Lv. 35.</td>
+        </tr>
+
+        <tr>
+          <td>Grand Scepter<br><span class="jp">グランドセプター</span></td>
+          <td>-</td>
+          <td>430</td>
+          <td>420</td>
+          <td>11360</td>
+          <td>3976</td>
+          <td>Shop Lv. 40.</td>
+        </tr>
+
+        <tr>
+          <td>Compass Rod<br><span class="jp">フィクシーダ</span></td>
+          <td>-</td>
+          <td>474</td>
+          <td>462</td>
+          <td>13640</td>
+          <td>4774</td>
+          <td>Shop Lv. 45.</td>
+        </tr>
+
+        <tr>
+          <td>Eternal Flame<br><span class="jp">エンドレストーチ</span></td>
+          <td>Fire</td>
+          <td>518</td>
+          <td>504</td>
+          <td>16150</td>
+          <td>5652</td>
+          <td>Shop Lv. 50.</td>
+        </tr>
+
+        <tr>
+          <td>Brandung<br><span class="jp">ブランドゥング</span></td>
+          <td>Water</td>
+          <td>562</td>
+          <td>546</td>
+          <td>18840</td>
+          <td>6594</td>
+          <td>Shop Lv. 55.</td>
+        </tr>
+
+        <tr>
+          <td>Energy Wand<br><span class="jp">エナジーワンド</span></td>
+          <td>-</td>
+          <td>606</td>
+          <td>588</td>
+          <td>21760</td>
+          <td>7616</td>
+          <td>Shop Lv. 60.</td>
+        </tr>
+
+        <tr>
+          <td>Fortune Rod<br><span class="jp">フォーチュンヘルム</span></td>
+          <td>-</td>
+          <td>650</td>
+          <td>630</td>
+          <td>24880</td>
+          <td>8708</td>
+          <td>Shop Lv. 65.</td>
+        </tr>
+
+        <tr>
+          <td>Wisteria<br><span class="jp">ウィステリア</span></td>
+          <td>-</td>
+          <td>694</td>
+          <td>672</td>
+          <td>28200</td>
+          <td>9870</td>
+          <td>Shop Lv. 70.</td>
+        </tr>
+
+        <tr>
+          <td>Star Rod<br><span class="jp">スターロッド</span></td>
+          <td>Light</td>
+          <td>738</td>
+          <td>714</td>
+          <td>31740</td>
+          <td>11109</td>
+          <td>Shop Lv. 75.</td>
+        </tr>
+
+        <tr>
+          <td>Guivre Rod<br><span class="jp">ウィーブルロッド</span></td>
+          <td>-</td>
+          <td>782</td>
+          <td>756</td>
+          <td>35480</td>
+          <td>12418</td>
+          <td>Shop Lv. 80.</td>
+        </tr>
+
+        <tr>
+          <td>Captivated Heart<br><span class="jp">キャプティブハート</span></td>
+          <td>Dark</td>
+          <td>826</td>
+          <td>798</td>
+          <td>39440</td>
+          <td>13804</td>
+          <td>Shop Lv. 85.</td>
+        </tr>
+
+        <tr>
+          <td>Lindworm Staff<br><span class="jp">竜杖リントヴルム</span></td>
+          <td>-</td>
+          <td>869</td>
+          <td>840</td>
+          <td>43580</td>
+          <td>15253</td>
+          <td>Shop Lv. 90.</td>
+        </tr>
+
+        <tr>
+          <td>Blue Crystal Rod<br><span class="jp">BCロッド</span></td>
+          <td>-</td>
+          <td>913</td>
+          <td>882</td>
+          <td>47950</td>
+          <td>16782</td>
+          <td>Shop Lv. 95.</td>
+        </tr>
+
+        <tr>
+          <td>Stinger<br><span class="jp">バザーウィップ</span></td>
+          <td>Light</td>
+          <td>941</td>
+          <td>907</td>
+          <td>51610</td>
+          <td>18063</td>
+          <td>Shop Lv. 100.</td>
+        </tr>
+
+        <tr>
+          <td>Princess Premiere<br><span class="jp">姫杖プルミエール</span></td>
+          <td>-</td>
+          <td>955</td>
+          <td>925</td>
+          <td>-</td>
+          <td>765</td>
+          <td>Event: Pretty and Pink.</td>
+        </tr>
+
+        <tr>
+          <td>Foxtail<br><span class="jp">ねこじゃらし</span></td>
+          <td>-</td>
+          <td>350</td>
+          <td>850</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Event: Elize's "Grand Master" character arena.</td>
+        </tr>
+
+        <tr>
+          <td>Tregatoria, the Bellowing Demon<br><span class="jp">唸魔杖トレガトリア</span></td>
+          <td>-</td>
+          <td>670*</td>
+          <td>730*</td>
+          <td>-</td>
+          <td>-</td>
+          <td>Drop: Gatrega. P. ATK and A. ATK scale with enemies felled while linked after the "Golden Mage Knight" subevent.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>&copy; 2025 Tales Archive</footer>
+
+<script>
+  // Tabs
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".panel");
+
+  tabs.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((p) => p.classList.remove("active"));
+      btn.classList.add("active");
+      document
+        .getElementById("panel-" + btn.dataset.tab)
+        .classList.add("active");
+    });
+  });
+
+  // Simple artes table search (works on whatever rows you add)
+  const artesSearch = document.getElementById("search-artes");
+  const artesRows = document.querySelectorAll("#tbl-artes tbody tr");
+
+  if (artesSearch) {
+    artesSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase();
+
+      artesRows.forEach((row) => {
+        // Always keep section dividers visible
+        if (row.classList.contains("section-row")) {
+          row.style.display = "";
+          return;
+        }
+
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
