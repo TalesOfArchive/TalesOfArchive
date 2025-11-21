@@ -1,0 +1,25 @@
+﻿<!doctype html><html lang='en'><head>
+  <link rel="icon" href="favicon.ico" />
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Tales Archive</title>
+<style>
+body{margin:0;font-family:system-ui;background:#f8fafc;color:#0f172a}
+.bookshelf{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:2rem}
+.book{position:relative;aspect-ratio:2/3;border-radius:10px;overflow:hidden;box-shadow:0 10px 25px rgba(2,6,23,.15)}
+.book img{width:100%;height:100%;object-fit:cover}
+.book::after{content:attr(data-title) "\A" attr(data-subtitle);white-space:pre-line;position:absolute;left:0;right:0;bottom:0;
+padding:.55rem .6rem;font-weight:700;font-size:.95rem;line-height:1.2;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.6),transparent)}
+a{text-decoration:none;color:inherit}
+</style></head><body>
+<h1 style='text-align:center;margin-top:1rem'>The Tales Archive</h1>
+<div id='bookshelf' class='bookshelf'></div>
+<script>
+const GAMES = [{"slug": "phantasia-ps1", "title": "Phantasia", "subtitle": "PS1"}, {"slug": "destiny-dc", "title": "Destiny", "subtitle": "DC"}, {"slug": "eternia", "title": "Eternia", "subtitle": ""}, {"slug": "destiny-2", "title": "Destiny 2", "subtitle": ""}, {"slug": "symphonia", "title": "Symphonia", "subtitle": ""}, {"slug": "rebirth", "title": "Rebirth", "subtitle": ""}, {"slug": "legendia", "title": "Legendia", "subtitle": ""}, {"slug": "abyss", "title": "Abyss", "subtitle": ""}, {"slug": "innocence", "title": "Innocence", "subtitle": ""}, {"slug": "vesperia", "title": "Vesperia", "subtitle": ""}, {"slug": "hearts", "title": "Hearts", "subtitle": ""}, {"slug": "graces-f", "title": "Graces f", "subtitle": ""}, {"slug": "xillia", "title": "Xillia", "subtitle": ""}, {"slug": "xillia-2", "title": "Xillia 2", "subtitle": ""}, {"slug": "zesteria", "title": "Zesteria", "subtitle": ""}, {"slug": "berseria", "title": "Berseria", "subtitle": ""}, {"slug": "arise", "title": "Arise", "subtitle": ""}];
+const shelf = document.getElementById('bookshelf');
+const FALLBACK = 'covers/vesperia.jpg';
+shelf.innerHTML = GAMES.map(g => `
+  <a class='book' data-title='${g.title}' data-subtitle='${g.subtitle||''}' href='./${g.slug}/index.html'>
+    <img src='covers/${g.slug}.jpg' onerror='this.src=FALLBACK'>
+  </a>`).join('');
+</script></body></html>
+
