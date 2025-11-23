@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Tales Archive</title>
+  <link rel="icon" href="../favicon.ico">
+
+  <style>
+    * , *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: system-ui, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    .site-header {
+      width: 100%;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      background: #334155;
+      color: #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.15s ease-in-out;
+    }
+
+    .back-btn:hover {
+      background: #475569;
+    }
+
+    /* Contact Card */
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 2.5rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-card h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .email {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .discord-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #5865F2;
+      color: white;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.15s ease-in-out;
+      margin-top: .5rem;
+    }
+
+    .discord-btn:hover {
+      background: #4752C4;
+    }
+
+    .discord-logo {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-title">Tales Archive</div>
+      <a href="../index.html" class="back-btn">Home</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <div class="contact-card">
+
+      <h1>Contact Us</h1>
+
+      <div class="email">
+        📧 Email:<br>
+        <a href="mailto:Talesofarchivesiteholder@gmail.com">
+          Talesofarchivesiteholder@gmail.com
+        </a>
+      </div>
+
+    <a class="discord-btn" href="https://discord.gg/GyNTCn8C9f" target="_blank">
+  Join the Discord
+</a>
+
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    This is a fan-made project and is not affiliated with or endorsed by Bandai Namco.
+  </footer>
+
+</body>
+</html>
